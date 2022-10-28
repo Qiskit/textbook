@@ -1,0 +1,9 @@
+ket0:
+  meaning: This vector represents the '0' state of the qubit
+  say: Ket 0
+  type: Common notation
+
+ket1:
+  meaning: This vector represents the '1' state of the qubit
+  say: Ket 1
+  type: Common notation

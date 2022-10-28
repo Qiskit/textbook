@@ -1,0 +1,17 @@
+# ==============================================================================
+# Glossary
+# ==============================================================================
+
+sample:
+  text: This is an annotation for a sample glossary term. 
+
+qubit:
+  title: Qubit
+  text: |
+    A __qubit__ or __quantum bit__ is the basic unit of quantum information.
+    It is a two-state quantum-mechanical system, and one of the simplest systems
+    displaying the peculiarity of quantum mechanics.
+
+    Quantum mechanics allows the qubit to be in a coherent superposition of both
+    states simultaneously, a property which is fundamental to quantum mechanics
+    and quantum computing.
