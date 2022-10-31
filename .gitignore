@@ -34,7 +34,7 @@ dist
 __pycache__
 *.egg-info
 working
-scripts/temp
+test/.temp
 environment/ipython/profile_default
 
 public/
