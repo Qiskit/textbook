@@ -34,12 +34,11 @@ dist
 __pycache__
 *.egg-info
 working
-scripts/temp
+tests/.temp
 environment/ipython/profile_default
 
 public/
 cypress/screenshots
-scripts/temp
 
 # Environments
 .env

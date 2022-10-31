@@ -1,0 +1,5 @@
+blank_issues_enabled: true
+contact_links:
+  - name: Appearance / website issues 💅
+    url: https://github.com/Qiskit/saiba/issues/new/choose
+    about: Open an issue in the Saiba repository.
