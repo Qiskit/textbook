@@ -8,7 +8,7 @@ python3.8 -m pip install -r environment/requirements.txt
 export IPYTHONDIR="./environment/ipython"
 echo "\n\nCreating new ipython profile at ${IPYTHONDIR}"
 ipython profile create
-mv ./environment/ipython/ipython_kernel_config.py $IPYTHONDIR/profile_default/ipython_kernel_config.py
+cp ./environment/ipython/ipython_kernel_config.py $IPYTHONDIR/profile_default/ipython_kernel_config.py
 
 if command -v direnv &> /dev/null
 then
