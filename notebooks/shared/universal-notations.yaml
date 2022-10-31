@@ -1,0 +1,87 @@
+ket_psi:
+  notation: $| \psi \rangle$
+  description: This is a general term for a given quantum state, this is used a lot in quantum computing to represent a quantum state created by the manipulation of qubits in a circuit.
+
+ket:
+  notation: $| a \rangle$
+  description: The | and ⟩ can actually have any value between them (the 𝜓 above is the most common). The | and ⟩ in this order is known as a ‘Ket’ in Dirac Notation. This can be written as a column vector.
+
+bra:
+  notation: $\langle a |$
+  description: The ⟨ and | in this order is known as a ‘Bra’ in Dirac Notation. ⟨𝑎| is equal to the transpose of complex conjugate of |𝑎⟩, also  denoted as 𝑎† (when 𝑎 is a vector). A Bra refers to a vector with each component replaced by its complex conjugate and then transposed (i.e. converted from a column vector to a row vector).
+
+inner_product:
+  notation: $\langle a |  b \rangle$
+  description: The ‘inner product’ of vectors |𝑎⟩ and |𝑏⟩. Otherwise known as the ‘dot product’ or ’scalar product’. See the Dirac Notation section for details.
+
+outer_product:
+  notation: $| a \rangle \langle b |$
+  description: In Dirac Notation, this represents the ‘outer product’ of vectors |𝑎⟩ and |𝑏⟩. See the bonus resources for more details.
+
+probability_amplitude:
+  notation: $| x | \psi \rangle | ^2 $
+  description: Vertical lines surrounding a Bra-Ket denotes squaring the vectors. This is the same as writing (⟨𝑎|𝑏⟩)^2 but this is more difficult to read so we use vertical lines instead. This is known as the ’probability amplitude’ in quantum computing as it can be used to calculate the probability of measuring a certain outcome.
+
+dagger:
+  notation: $ \dagger $
+  description: This ‘dagger’ notation is used with operators and quantum states. It represents the ‘conjugate transpose’ of a vector. See the bonus resources for more details.
+
+tensor_product:
+  notation: $ ⊗ $
+  description: Tensor product. You can think of this as multiplying every component of one vector with every component of the other.
+
+dot_product:
+  notation: $ · $
+  description: Dot product (otherwise known as inner product or scalar product). Vectors have both magnitude and direction; you can think of the dot product as multiplying the direction part of each vector together.
+
+hilbert_space:
+  notation: $ \mathcal{H} $
+  description: This is the symbol for ‘Hilbert Space’, which is a complex vector space which is where all qubit vector states ‘live’, every possible vector within the Hilbert space can be represented using a combination of |0⟩ and |1⟩.
+
+set_membership:
+  notation: "&isin;"
+  description: This is the ‘set membership’ symbol. This means that anything on the left of the symbol ‘is an element of’ whatever is on the right.
+
+subset:
+  notation: $ \subset $
+  description: This means ‘is a proper subset of’. So if A⊂B, all members of A must be members of B, but B may also have members not present in A.
+
+real_number:
+  notation: "&Ropf;"
+  description: Real number (as opposed to an imaginary number)"
+
+complex_number:
+  notation: "&Copf;"
+  description: Complex number (i.e. a number composed of a real and imaginary part, often represented as a + b i).
+
+for_all:
+  notation: $ \forall $
+  description: This is read as ‘for all’.
+
+sum:
+  notation: $ \sum $
+  description: This is read as ‘sum of’, with any value on top of the symbol representing the maximum and any value on the bottom representing the minimum.
+
+pauli_x:
+  notation: $ X $ or $ \sigma x $
+  description: Pauli-X operations represent rotations by 𝜋 radians around the X axis on the Bloch Sphere.
+
+pauli_y:
+  notation: $ Y $ or $ \sigma y $
+  description: Pauli-Y operations represent rotations by 𝜋 radians around the Y axis on the Bloch Sphere.
+
+pauli_z:
+  notation: $ Z $ or $ \sigma z $
+  description: Pauli-Z operations represent rotations by 𝜋 radians around the Z axis on the Bloch Sphere.
+
+identity_matrix:
+  notation: $ I $ or $ ∥ $
+  description: Depending on the size of the vector (i.e. the number of qubits involved), an identity matrix of corresponding size may be used.
+
+hadamard_gate:
+  notation: $ H $
+  description: This symbol most commonly refers to a Hadamard gate, which is essential for putting qubits into superposition.
+
+unitary_matrix:
+  notation: $ U $
+  description: A unitary matrix is any matrix that when multiplied by its conjugate transpose, will produce an Identity matrix.

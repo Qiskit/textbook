@@ -37,6 +37,232 @@
 #       # Path to source notebook, relative to this file
 #       url: /my-course/my-notebook
 
+- title: Basics of quantum information
+  subtitle: "Unit 1: Basics of quantum information"
+  url: /basics
+  type: course
+  overviewInfo:
+    thumbnailUrl: /basics/overview/header.png
+    description:
+      short: |
+        This free course covers quantum information at a detailed mathematical
+        level. Join John Watrous as you explore quantum information, quantum
+        algorithms, and how to understand and mitigate noise.
+      long: |
+        Quantum computing has become a global conversation, and whether in
+        media or movies, fact or fiction, the excitement for quantum is growing
+        every day. This free course covers quantum information at a detailed
+        mathematical level. Join John Watrous as you explore quantum
+        information, quantum algorithms, and how to understand and mitigate
+        noise.
+    externalRecommendedReadingsPreamble: |
+      To make the most out of this course, we recommend familiarity with basic
+      linear algebra, complex numbers, and elementary mathematical notions
+      including sets and functions. You may also want to install Qiskit to run
+      your own code. The following sources are a few among many that cover this
+      material
+    externalRecommendedReadings:
+      - title: Linear algebra
+        author: Khan Academy,
+        description: |
+          In this video series, Sal Khan introduces key concepts in linear
+          algebra that we will rely upon.
+        link: https://www.khanacademy.org/math/linear-algebra
+      - title: Linear Algebra 
+        author: Stephen Friedberg, Arnold Insel, Lawrence Spence,
+        description: |
+          This book on linear algebra covers the material we require, and also
+          includes appendices on sets, functions, and complex numbers.
+        link: https://www.pearson.com/en-us/subject-catalog/p/linear-algebra/P200000006185/9780137515424
+      - title: Linear Algebra Done Right 
+        author: Sheldon Axler,
+        description: |
+          A classic text on linear algebra suitable for those at or beyond an
+          advanced undergraduate level.
+        link: https://link.springer.com/book/10.1007/978-3-319-11080-6
+      - title: Introduction to Sets - A beginner
+        author: Ricky Shadrach, Rod Pierce,
+        description: |
+          A beginner-level web page on sets that may help to bring some readers
+          up to speed.
+        link: https://www.mathsisfun.com/sets/sets-introduction.html
+      - title: "An Introduction to Real Analysis: Chapter 1"
+        author: John K. Hunter,
+        description: |
+          The first chapter of these lecture notes includes a more formal and
+          detailed introduction to sets and functions.
+        link: https://www.math.ucdavis.edu/~hunter/intro_analysis_pdf/ch1.pdf
+      - title: How to install Qiskit
+        description: |
+          You don't need to install anything to start this course, but you may
+          eventually want to write and run your own Qiskit programs. In this
+          video, Nick Brønn helps you get Qiskit running.
+        link: https://www.youtube.com/watch?v=1kRfHNUbkrg
+  sections:
+    - title: Single systems
+      id: single-systems
+      uuid: dd5680be-7490-401e-9e68-c1ec7d0f5d61
+      url: /basics/single-systems
+      previewImgUrl: /basics/overview/single-systems.png
+    - title: Multiple systems
+      id: multiple-systems
+      uuid: 327b128f-4fec-410a-a3f9-079939002bf2
+      url: /basics/multiple-systems
+      previewImgUrl: /basics/overview/multiple-systems.png
+    - title: Circuits, protocols, and games
+      id: circuits-protocols-games
+      uuid: 57d5452e-85cd-40f8-a290-11466213c1a6
+      url: /basics/circuits-and-protocols
+      previewImgUrl: /basics/overview/circuits-and-protocols.png
+
+- title: Introduction to Quantum Computing
+  url: /introduction
+  type: course
+  overviewInfo:
+    thumbnailUrl: /intro/overview/header.png
+    description:
+      short: |
+        Not sure where to start? This path is for you. This introduction is
+        aimed at audiences from all backgrounds. Whether you're keen to start
+        your journey into quantum computing, or just curious as to what it's
+        all about, this course will take you from zero to one, without the hand
+        waving.
+      long: |
+        This short course contains around 3 hours of content and is aimed at
+        self-learners from all backgrounds (technical and non-technical). The
+        aim of this course is to give a solid understanding of the principles
+        behind quantum computing, focussing on developing intuition. After this
+        course, you will have a fair understanding of quantum computing and
+        Qiskit, as well as a short project demonstrating it. You should then be
+        able to jump straight into many of the other courses in this textbook
+        when they are ready, including traditional algorithms and protocols,
+        near term quantum algorithms, and quantum machine learning.
+    externalRecommendedReadings:
+      - title: Introduction to Linear Algebra 
+        author: Gilbert Strang,
+        link: https://math.mit.edu/~gs/linearalgebra/
+      - title: A Gentle Introduction to Linear Algebra 
+        author: Jason Brownlee,
+        link: https://machinelearningmastery.com/gentle-introduction-linear-algebra
+  sections:
+    - title: Why quantum computing?
+      uuid: bdb1d662-e0f6-428a-8830-befe6b47f320
+      id: why-quantum-computing
+      url: /intro/why-quantum-computing
+      previewImgUrl: /intro/overview/why-quantum-computing.png
+    - title: The atoms of computation
+      id: the-atoms-of-computation
+      uuid: 37ef477e-ab8d-11ec-b909-0242ac120002
+      url: /intro/atoms-of-computation
+      previewImgUrl: /intro/overview/atoms-of-computation.png
+    - title: What is quantum?
+      id: what-is-quantum
+      uuid: 7c765036-aebc-11ec-b909-0242ac120002
+      url: /intro/what-is-quantum
+      previewImgUrl: /intro/overview/what-is-quantum.png
+    - title: Describing quantum computers
+      id: describing-quantum-computers
+      uuid: 9260a554-aebc-11ec-b909-0242ac120002
+      url: /intro/describing-quantum-computers
+      previewImgUrl: /intro/overview/describing-quantum-computers.png
+    - title: Entangled states
+      id: entangled-states
+      uuid: 98aa9032-aebc-11ec-b909-0242ac120002
+      url: /intro/entangled-states
+      previewImgUrl: /intro/overview/entangled-states.png
+    - title: Visualizing entanglement
+      id: visualizing-entanglement
+      uuid: 9e8ceb9e-aebc-11ec-b909-0242ac120002
+      url: /intro/visualizing-entanglement
+      previewImgUrl: /intro/overview/visualizing-entanglement.png
+    - title: Grovers algorithm
+      id: grovers-search-algorithm
+      uuid: a2e6f7a2-aebc-11ec-b909-0242ac120002
+      url: /intro/grover-intro
+      previewImgUrl: /intro/overview/grover-intro.png
+    - title: Project
+      id: project
+      uuid: e25c3f90-aebd-11ec-b909-0242ac120002
+      url: /intro/project
+      previewImgUrl: /intro/overview/project.png
+
+- title: Quantum Machine Learning
+  url: /machine-learning
+  type: course
+  overviewInfo:
+    thumbnailUrl: /intro/overview/header.png
+    description:
+      short: |
+        Want to learn about this exciting, developing field? If you're familiar
+        with quantum computing basics, this course will give you a primer on
+        machine learning, walk you through key concepts, and bring you up to
+        speed with recent developments.
+      long: |
+        This course contains around eight hours of content, and is aimed at
+        self-learners who are comfortable with undergraduate-level mathematics
+        and quantum computing fundamentals. This course will take you through
+        key concepts in quantum machine learning, such as parameterized quantum
+        circuits, training these circuits, and applying them to basic problems.
+        By the end of the course, you'll understand the state of the field, and
+        you'll be familiar with recent developments in both supervised and
+        unsupervised learning such as quantum kernels and general adversarial
+        networks. This course finishes with a project that you can use to
+        showcase what you've learnt.
+
+        This course was created by IBM Quantum with the help of Qiskit Advocates
+        through the Qiskit Advocate Mentoring Program.
+  sections:
+    - title: Introduction
+      id: introduction
+      uuid: 16e935fc-b51b-11ec-b909-0242ac120002
+      url: /quantum-machine-learning/introduction
+      previewImgUrl: /quantum-machine-learning/overview/introduction.png
+    - title: Parametrized quantum circuits
+      id: parameterized-quantum-circuits
+      uuid: 19a9f4de-b51b-11ec-b909-0242ac120002
+      url: /quantum-machine-learning/pqc
+      previewImgUrl: /quantum-machine-learning/overview/pqc.png
+    - title: Data encoding
+      id: data-encoding
+      uuid: 1d09af66-b51b-11ec-b909-0242ac120002
+      url: /quantum-machine-learning/encoding
+      previewImgUrl: /quantum-machine-learning/overview/encoding.png
+    - title: Training quantum circuits
+      id: training-quantum-circuits
+      uuid: 1fb38444-b51b-11ec-b909-0242ac120002
+      url: /quantum-machine-learning/training
+      previewImgUrl: /quantum-machine-learning/overview/training.png
+    - title: Supervised learning
+      id: supervised-learning
+      uuid: 22cf51bc-b51b-11ec-b909-0242ac120002
+      url: /quantum-machine-learning/supervised
+      previewImgUrl: /quantum-machine-learning/overview/supervised.png
+    - title: Variational classification
+      id: variational-classification
+      uuid: 26951034-b51b-11ec-b909-0242ac120002
+      url: /quantum-machine-learning/vqc
+      previewImgUrl: /quantum-machine-learning/overview/vqc.png
+    - title: Quantum feature maps and kernels
+      id: quantum-feature-maps-kernels
+      uuid: 29b0fda0-b51b-11ec-b909-0242ac120002
+      url: /quantum-machine-learning/kernel
+      previewImgUrl: /quantum-machine-learning/overview/kernel.png
+    - title: Unsupervised learning
+      id: unsupervised-learning
+      uuid: 2cc6b386-b51b-11ec-b909-0242ac120002
+      url: /quantum-machine-learning/unsupervised
+      previewImgUrl: /quantum-machine-learning/overview/unsupervised.png
+    - title: Quantum generative adversarial networks
+      id: quantum-generative-adversarial-networks
+      uuid: 2ff2a3e4-b51b-11ec-b909-0242ac120002
+      url: /quantum-machine-learning/qgan
+      previewImgUrl: /quantum-machine-learning/overview/qgan.png
+    - title: Project
+      id: project
+      uuid: 345f0c2e-b51b-11ec-b909-0242ac120002
+      url: /quantum-machine-learning/project
+      previewImgUrl: /quantum-machine-learning/overview/project.png
+
 - title: Prerequisites
   url: /ch-prerequisites
   type: chapter
