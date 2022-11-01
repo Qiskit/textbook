@@ -48,20 +48,12 @@ them depending on the changes you've made.
 
 This folder contains different passes run over the notebooks.
 
+### Formatting tests
+
 - `toc.py`: Checks the table of contents (`notebooks/toc.yaml`) is valid.
   Other softwares outside this repo rely on information in `toc.yaml`. This
   script checks the file is valid, that all referenced files exist, and other
   things likely to go wrong.
-
-- `nb_lint.sh`: Runs pylint on notebook code cells.
-  The code examples in the textbook should meet the same standards as
-  code in the Qiskit codebase. This script runs a pass/fail pylint check
-  on each notebook.
-
-  Since the code examples are not a code base, some rules don't apply,
-  and we've tried to remove those where possible. You can also add a `
-  pylint: disable=...` comment to avoid specific warnings (will be hidden
-  on the site), but you should use this sparingly.
 
 - `blips.py`: Check for important but easily fixable problems.
   - Each exercise should have a unique name, and we sometimes forget to update
@@ -87,6 +79,18 @@ This folder contains different passes run over the notebooks.
   optimized, and can optimize any multi-line SVGs when run with the `--fix`
   argument. Running `install.sh` adds this as a commit hook.
 
+### Linting tests
+
+- `nb_lint.sh`: Runs pylint on notebook code cells.
+  The code examples in the textbook should meet the same standards as
+  code in the Qiskit codebase. This script runs a pass/fail pylint check
+  on each notebook.
+
+  Since the code examples are not a code base, some rules don't apply,
+  and we've tried to remove those where possible. You can also add a `
+  pylint: disable=...` comment to avoid specific warnings (will be hidden
+  on the site), but you should use this sparingly.
+
 - `nb_vale.py`: Run Vale linter checks on notebooks.
   [Vale](https://vale.sh/) is a 'prose linter', i.e. a program that checks
   for common problems in writing, including spelling errors, wordiness, and
@@ -94,10 +98,7 @@ This folder contains different passes run over the notebooks.
   notebooks, we use this script to pull the markdown from the notebooks to a
   temp folder, then run Vale on those files.
 
-- `missing_nb_check.sh`: Compares files in old textbook repo to this repo.
-  This script checks for notebooks added to `qiskit-community/qiskit
-  textbook` that are not in `Qiskit/platypus` and makes a GitHub issue
-  for it.
+### Code testing
 
 - `nb_autorun.py`: Script to run all the notebooks. Will report any errors, and
   will replace outputs if you pass `--write` option. This script can also
@@ -120,6 +121,8 @@ This folder contains different passes run over the notebooks.
   In Jupyter notebooks, `_` stores the last cell output. You can also use
   `Out[x]` to refer to specific cell outputs (assume all notebooks are run from
   top to bottom).
+
+### Other
 
 - `tools.py`: Shared logic (e.g. argument parsing) used by scripts in this
   folder.

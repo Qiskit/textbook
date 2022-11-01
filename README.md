@@ -97,7 +97,8 @@ and how to insert these features. (TODO: include more about this).
 
 ## Testing
 
-TODO: Explain tests
+When you submit a pull request (PR), we'll run some tests against your changes.
+You can read more about them in the [`tests folder`](./tests).
 
 ## Versioning
 
