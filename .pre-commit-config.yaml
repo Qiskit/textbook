@@ -1,0 +1,19 @@
+# See https://pre-commit.com for more information
+repos:
+  - repo: local
+    hooks:
+      - name: Check notebooks/toc.yaml is valid
+        id: toc-yaml
+        language: system
+        entry: python tests/passes/toc.py
+        files: 'notebooks/toc.yaml'
+      - name: Reset notebook metadata
+        id: nb-metadata
+        language: system
+        entry: python tests/passes/nb_metadata.py --fix --git-add
+        files: '(.*?).ipynb$'
+      - name: Minimize notebook SVGs
+        id: nb-svg
+        language: system
+        entry: python tests/passes/nb_svg.py --fix --git-add
+        files: '(.*?).ipynb$'

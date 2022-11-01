@@ -1,0 +1,7 @@
+extends: occurrence
+message: "Keep sentences below 40 words."
+scope: sentence
+level: error
+max: 41
+token: \b(\w+)\b
+
