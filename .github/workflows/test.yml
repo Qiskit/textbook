@@ -1,0 +1,53 @@
+name: Test
+
+on:
+  workflow_dispatch:
+  pull_request:
+
+env:
+  # Disable Tensorflow information messages
+  TF_CPP_MIN_LOG_LEVEL: 3
+
+jobs:
+  test-run:
+    name: Run tests
+    if: github.event.pull_request.user.login != 'gitlocalize-app[bot]'
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v3
+
+      - name: Install Vale
+        run: sudo snap install --edge vale
+
+      - name: Install Python 3.8
+        uses: actions/setup-python@v2
+        with:
+          python-version: 3.8
+
+      - name: Load pip cache
+        uses: actions/cache@v3
+        with:
+          path: ~/.cache/pip
+          key: py-${{ hashFiles('environment/requirements.txt') }}
+
+      - name: Set up Python environment
+        run: |
+          ./install.sh
+          source .venv/bin/activate
+
+      - name: Get changed notebooks
+        id: changed-notebooks
+        uses: tj-actions/changed-files@v29.0.9
+        with:
+          files: notebooks/**/*.ipynb
+
+      - name: Check notebook formatting
+        run: ./tests/run_formatting.sh
+
+      - name: Lint notebooks
+        run: ./tests/run_lint.sh
+
+      - name: Run changed notebooks
+        run: |
+          python ./tests/passes/nb_autorun.py ${{ steps.changed-notebooks.outputs.all_changed_files }} --fail-on-warning

@@ -23,10 +23,7 @@ then
 else
     echo "Note: direnv is not installed; you'll need to manually set up your"
     echo "environment and activate it whenever you want to work on the textbook." 
-    echo "See README.md for details"
-    # Deactivate in case user doesn't understand they're in a venv and can't
-    # escape (direnv won't leave automatically when they navigate away).
-    deactivate  
+    echo "See README.md for details. To leave this venv, run `deactivate`."
 fi
 
 echo "\nQiskit Textbook setup complete!\n"
