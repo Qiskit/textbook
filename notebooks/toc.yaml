@@ -626,10 +626,10 @@
       previewImgUrl: /ch-applications/overview/vqls.png
 
 - title: Investigating quantum hardware using quantum circuits 
-  url: /ch-quantum-hardware
+  url: /quantum-hardware
   type: chapter
   overviewInfo:
-    thumbnailUrl: /ch-quantum-hardware/overview/header-circuits.png
+    thumbnailUrl: /quantum-hardware/overview/header.png
     description:
       short: |
         All circuit-based quantum devices share some similar characteristics
@@ -651,34 +651,34 @@
     - title: Introduction to quantum error correction using repetition codes
       id: error-correction-repetition-code
       uuid: 20e45231-2ac8-4e3c-b695-af8121ff84bf
-      url: /ch-quantum-hardware/error-correction-repetition-code
-      previewImgUrl: /ch-quantum-hardware/overview/error-correction-repetition-code.png
+      url: /quantum-hardware/error-correction-repetition-code
+      previewImgUrl: /quantum-hardware/overview/error-correction-repetition-code.png
     - title: Measurement error mitigation
       id: measurement-error-mitigation
       uuid: ebce5629-1f24-49ec-85dd-75a8946ee867
-      url: /ch-quantum-hardware/measurement-error-mitigation
-      previewImgUrl: /ch-quantum-hardware/overview/measurement-error-mitigation.png
+      url: /quantum-hardware/measurement-error-mitigation
+      previewImgUrl: /quantum-hardware/overview/measurement-error-mitigation.png
     - title: Randomized benchmarking
       id: randomized-benchmarking
       uuid: f55fa9e5-76a2-4404-a7cf-2bed19296e8d
-      url: /ch-quantum-hardware/randomized-benchmarking
-      previewImgUrl: /ch-quantum-hardware/overview/randomized-benchmarking.png
+      url: /quantum-hardware/randomized-benchmarking
+      previewImgUrl: /quantum-hardware/overview/randomized-benchmarking.png
     - title: Measuring quantum volume
       id: measuring-quantum-volume
       uuid: 4464a972-1a00-4837-93fb-6dad869915bb
-      url: /ch-quantum-hardware/measuring-quantum-volume
-      previewImgUrl: /ch-quantum-hardware/overview/measuring-quantum-volume.png
+      url: /quantum-hardware/measuring-quantum-volume
+      previewImgUrl: /quantum-hardware/overview/measuring-quantum-volume.png
     - title: The density matrix and mixed states 
       id: density-matrix
       uuid: 9f785388-6fab-4c13-b323-4d98cf215c03
-      url: /ch-quantum-hardware/density-matrix
-      previewImgUrl: /ch-quantum-hardware/overview/density-matrix.png
+      url: /quantum-hardware/density-matrix
+      previewImgUrl: /quantum-hardware/overview/density-matrix.png
 
 - title: Investigating quantum hardware using microwave pulses
-  url: /ch-quantum-hardware
+  url: /quantum-hardware-pulses
   type: chapter
   overviewInfo:
-    thumbnailUrl: /ch-quantum-hardware/overview/header-pulses.png
+    thumbnailUrl: /quantum-hardware-pulses/overview/header.png
     description:
       short: |
         In this chapter, we get a level closer to the real quantum machines.
@@ -706,38 +706,38 @@
     - title: Calibrating qubits with Qiskit Pulse
       id: calibrating-qubits-pulse
       uuid: d5d46aab-e7b6-4fe0-9014-d367c0f84a0b
-      url: /ch-quantum-hardware/calibrating-qubits-pulse
-      previewImgUrl: /ch-quantum-hardware/overview/calibrating-qubits-pulse.png
+      url: /quantum-hardware-pulses/calibrating-qubits-pulse
+      previewImgUrl: /quantum-hardware-pulses/overview/calibrating-qubits-pulse.png
     - title: Accessing higher energy states
       id: accessing_higher_energy_states
       uuid: 582f497c-a85d-473b-8647-b013dd46570d
-      url: /ch-quantum-hardware/accessing_higher_energy_states
-      previewImgUrl: /ch-quantum-hardware/overview/accessing_higher_energy_states.png
+      url: /quantum-hardware-pulses/accessing_higher_energy_states
+      previewImgUrl: /quantum-hardware-pulses/overview/accessing_higher_energy_states.png
     - title: Introduction to transmon physics
       id: transmon-physics
       uuid: 4ab2e5de-4d37-4229-afac-422cacca6b9b
-      url: /ch-quantum-hardware/transmon-physics
-      previewImgUrl: /ch-quantum-hardware/overview/transmon-physics.png
+      url: /quantum-hardware-pulses/transmon-physics
+      previewImgUrl: /quantum-hardware-pulses/overview/transmon-physics.png
     - title: Circuit quantum electrodynamics
       id: cQED-JC-SW
       uuid: d828436b-8b34-481b-99a8-aea23481a6ec
-      url: /ch-quantum-hardware/cQED-JC-SW
-      previewImgUrl: /ch-quantum-hardware/overview/cQED-JC-SW.png
+      url: /quantum-hardware-pulses/cQED-JC-SW
+      previewImgUrl: /quantum-hardware-pulses/overview/cQED-JC-SW.png
     - title: Exploring the Jaynes-Cummings Hamiltonian with Qiskit Pulse
       id: Jaynes-Cummings-model
       uuid: ffd8ae11-df73-4710-bdbf-02190b80fa17
-      url: /ch-quantum-hardware/Jaynes-Cummings-model
-      previewImgUrl: /ch-quantum-hardware/overview/Jaynes-Cummings-model.png
+      url: /quantum-hardware-pulses/Jaynes-Cummings-model
+      previewImgUrl: /quantum-hardware-pulses/overview/Jaynes-Cummings-model.png
     - title: Measuring the qubit ac-Stark shift 
       id: ac-Stark-shift
       uuid: 8f35b9fd-f144-4f38-8ce7-c7013844b09e
-      url: /ch-quantum-hardware/ac-Stark-shift
-      previewImgUrl: /ch-quantum-hardware/overview/ac-Stark-shift.png
+      url: /quantum-hardware-pulses/ac-Stark-shift
+      previewImgUrl: /quantum-hardware-pulses/overview/ac-Stark-shift.png
     - title: Hamiltonian tomography
       id: hamiltonian-tomography
       uuid: 37cc881f-a795-43b1-85b6-cb94f9cda622
-      url: /ch-quantum-hardware/hamiltonian-tomography
-      previewImgUrl: /ch-quantum-hardware/overview/hamiltonian-tomography.png
+      url: /quantum-hardware-pulses/hamiltonian-tomography
+      previewImgUrl: /quantum-hardware-pulses/overview/hamiltonian-tomography.png
 
 - title: Quantum computing labs 
   url: /ch-labs
@@ -769,46 +769,56 @@
           can just run it line by line...
         link: https://learn.qiskit.org/course/ch-prerequisites/introduction-to-python-and-jupyter-notebooks
   sections:
-    - title: Lab 1. Quantum circuits 
-      id: Lab01_QuantumCircuits
+    - title: "Lab 1. Quantum circuits"
+      id: lab-1-quantum-circuits
       uuid: 06b6328e-69e8-4c4b-8607-dc7548409f2a
       url: /ch-labs/Lab01_QuantumCircuits
       previewImgUrl: /ch-labs/overview/lab1.png
-    - title: Lab 2. Quantum measurement 
-      id: Lab02_QuantumMeasurement
-      uuid: f66f5085-cfad-4b0e-afad-4c2c834facc9
-      url: /ch-labs/Lab02_QuantumMeasurement
+    - title: "Lab 2. Single qubit gates"
+      id: lab-2-single-qubit-gates
+      uuid: 06b6328e-69e8-4c4b-8607-dc7548409f2a
+      url: /ch-labs/Lab02_Single_Qubit_Gates
       previewImgUrl: /ch-labs/overview/lab2.png
-    - title: Lab 3. Accuracy of quantum phase estimation 
-      id: Lab03_AccuracyQPE
-      uuid: a7eb5082-30f7-40cd-ae87-be4f2bd7ac1b
-      url: /ch-labs/Lab03_AccuracyQPE
+    - title: "Lab 3. Quantum measurement"
+      id: lab-3-quantum-measurements
+      uuid: f66f5085-cfad-4b0e-afad-4c2c834facc9
+      url: /ch-labs/Lab03_QuantumMeasurement
       previewImgUrl: /ch-labs/overview/lab3.png
-    - title: Lab 4. Iterative quantum phase estimation 
-      id: Lab04_IterativePhaseEstimation
-      uuid: 4a5ad6f0-2c46-469a-a39a-aed5c81a073a
-      url: /ch-labs/Lab04_IterativePhaseEstimation
+    - title: "Lab 4. Quantum measurement"
+      id: lab-4-bell-ghz-circuit
+      uuid: f66f5085-cfad-4b0e-afad-4c2c834facc9
+      url: /ch-labs/Lab04_Bell_GHZ_Circuit
       previewImgUrl: /ch-labs/overview/lab4.png
-    - title: Lab 5. Scalable Shor’s algorithm
-      id: Lab05_Scalable_Shor_Algorithm
-      uuid: d6c005d0-5475-43f6-99bc-fe8e6bfd0e80
-      url: /ch-labs/Lab05_Scalable_Shor_Algorithm
+    - title: "Lab 5. Accuracy of quantum phase estimation"
+      id: lab-5-accuracy-of-quantum-phase-estimation
+      uuid: a7eb5082-30f7-40cd-ae87-be4f2bd7ac1b
+      url: /ch-labs/Lab05_AccuracyQPE
       previewImgUrl: /ch-labs/overview/lab5.png
-    - title: Lab 6. Grover's search with an unknown number of solutions 
-      id: Lab06_Grover_search_with_an_unknown_number_of_solutions
-      uuid: fe800bb9-2f76-492f-96c9-7004804314dd
-      url: /ch-labs/Lab06_Grover_search_with_an_unknown_number_of_solutions
+    - title: "Lab 6. Iterative quantum phase estimation"
+      id: lab-6-iterative-phase-estimation-algorithm
+      uuid: 4a5ad6f0-2c46-469a-a39a-aed5c81a073a
+      url: /ch-labs/Lab06_IterativePhaseEstimation
       previewImgUrl: /ch-labs/overview/lab6.png
-    - title: Lab 7. Quantum simulation as a search algorithm 
-      id: Lab07_QuantumSimulationSearchAlgorithm
-      uuid: 49a957f3-8978-4cfd-86bf-a0da9fdac53f
-      url: /ch-labs/Lab07_QuantumSimulationSearchAlgorithm
+    - title: "Lab 7. Scalable Shor’s algorithm"
+      id: lab-7-scalable-shors-algorithm
+      uuid: d6c005d0-5475-43f6-99bc-fe8e6bfd0e80
+      url: /ch-labs/Lab07_Scalable_Shor_Algorithm
       previewImgUrl: /ch-labs/overview/lab7.png
-    - title: Lab 8. Quantum error correction 
-      id: Lab08_QEC
-      uuid: e70e6931-5e03-40ac-bd58-46eed306e599
-      url: /ch-labs/Lab08_QEC
+    - title: "Lab 8. Grover's search with an unknown number of solutions"
+      id: lab-8-grovers-search-with-an-unknown-number-of-solutions
+      uuid: fe800bb9-2f76-492f-96c9-7004804314dd
+      url: /ch-labs/Lab08_Grover_search_with_an_unknown_number_of_solutions
       previewImgUrl: /ch-labs/overview/lab8.png
+    - title: "Lab 9. Quantum simulation as a search algorithm"
+      id: lab-9-quantum-simulation-as-a-search-algorithm
+      uuid: 49a957f3-8978-4cfd-86bf-a0da9fdac53f
+      url: /ch-labs/Lab09_QuantumSimulationSearchAlgorithm
+      previewImgUrl: /ch-labs/overview/lab9.png
+    - title: "Lab 10. Quantum error correction"
+      id: lab-10-quantum-error-correction
+      uuid: e70e6931-5e03-40ac-bd58-46eed306e599
+      url: /ch-labs/Lab10_QEC
+      previewImgUrl: /ch-labs/overview/lab10.png
 
 - title: ch-appendix
   url: /ch-appendix
