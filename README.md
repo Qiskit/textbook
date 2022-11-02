@@ -131,3 +131,8 @@ For example, if you're teaching using `v1.0.3`, you know you can switch to any
 existing setup.
 
 TODO: how to see diff between versions.
+
+### Metadata versions
+
+For convenience, we'll also release 'meta' packages, which include _only_ the
+metadata needed to build https://qiskit.org/learn.
