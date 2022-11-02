@@ -3,10 +3,8 @@
 import yaml
 from pathlib import Path
 
-TOC_PATH = 'notebooks/toc.yaml'
-
-with open(TOC_PATH) as f:
-    toc = yaml.safe_load(f)
+TOC_PATH = Path('notebooks/toc.yaml')
+NOTEBOOKS_PATH = Path('notebooks')
 
 def check_exists(path):
     path = Path(path)
@@ -48,5 +46,28 @@ def check_course(course):
         for resource in overview['prerequisites']:
             check_resource(resource)
 
-for course in toc:
-    check_course(course)
+if __name__ == '__main__':
+    with open(TOC_PATH) as f:
+        toc = yaml.safe_load(f)
+
+    for course in toc:
+        check_course(course)
+
+    referenced_notebooks = []
+    for course in toc:
+        for section in course['sections']:
+            referenced_notebooks.append(
+                Path(f"notebooks/{section['url']}.ipynb")
+            )
+    for notebook in Path('notebooks').rglob('*.ipynb'):
+        if notebook not in referenced_notebooks:
+            if notebook.stem.startswith('_'):
+                continue
+            if notebook.stem.endswith('-checkpoint'):
+                continue
+            raise AssertionError(
+                f"Found notebook '{notebook}' with no reference in '{TOC_PATH}'.\n"
+                f"To fix, either add the notebook to '{TOC_PATH}', or prefix the filename with an underscore "
+                f"(i.e. '{notebook.stem + notebook.suffix}' -> '_{notebook.stem + notebook.suffix}')."
+            )
+        
