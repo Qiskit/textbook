@@ -287,13 +287,13 @@
         link: https://machinelearningmastery.com/gentle-introduction-linear-algebra/
   sections:
     - title: Setting up your environment
-      id: setting-the-environment
-      uuid: 2dda94b9-1242-4e87-8286-43be1a66abf9
+      id:  environment-setup-guide-to-work-with-qiskit-textbook
+      uuid: a5a86ddc-b519-11ec-b909-0242ac120002
       url: /ch-prerequisites/setting-the-environment
       previewImgUrl: /ch-prerequisites/overview/python-jupyter-notebooks.png
     - title: Python and Jupyter notebooks
-      id: python-and-jupyter-notebooks
-      uuid: 868eed7e-d397-40b8-a37f-554b33a39cf6
+      id: introduction-to-python-and-jupyter-notebooks
+      uuid: a9f5ea68-b519-11ec-b909-0242ac120002
       url: /ch-prerequisites/python-and-jupyter-notebooks
       previewImgUrl: /ch-prerequisites/overview/environment-setup.png
 
@@ -336,7 +336,7 @@
   sections:
     - title: Introduction
       id: introduction
-      uuid: b522c847-4d55-49fa-a5e7-0426f3b15913
+      uuid: afcc559e-b519-11ec-b909-0242ac120002
       url: /ch-states/introduction
       previewImgUrl: /ch-states/overview/introduction.png
     - title: The atoms of computation
@@ -346,17 +346,17 @@
       previewImgUrl: /ch-states/overview/atoms-computation.png
     - title: Representing qubit states
       id: representing-qubit-states
-      uuid: 9e23d10e-2eb0-4cb9-9d27-b1c71528b53b
+      uuid: b81717ca-b519-11ec-b909-0242ac120002
       url: /ch-states/representing-qubit-states
       previewImgUrl: /ch-states/overview/representing-qubit-states.png
     - title: Single qubit gates
       id: single-qubit-gates
-      uuid: 18aabc7f-143f-4d06-a93b-940d16528324
+      uuid: bd4334a4-b519-11ec-b909-0242ac120002
       url: /ch-states/single-qubit-gates
       previewImgUrl: /ch-states/overview/single-qubit-gates.png
     - title: The case for quantum
-      id: case-for-quantum
-      uuid: 9550cc75-b7f6-4fcc-a550-df23158bf020
+      id: the-case-for-quantum-computers
+      uuid: c0bbff62-b519-11ec-b909-0242ac120002
       url: /ch-states/case-for-quantum
       previewImgUrl: /ch-states/overview/case-for-quantum.png
 
@@ -402,32 +402,32 @@
   sections:
     - title: Introduction
       id: introduction
-      uuid: 005697f2-6d59-47b2-8324-887ecebee4f8
+      uuid: c50f4c90-b519-11ec-b909-0242ac120002
       url: /ch-gates/introduction
       previewImgUrl: /ch-gates/overview/introduction.png
     - title: Multiple qubits and entangled states
-      id: multiple-qubits-entangled-states
-      uuid: 0bebb2ee-2e32-439b-a382-2cafa55485d2
+      id: multiple-qubits-and-entangled-states
+      uuid: c7cfe502-b519-11ec-b909-0242ac120002
       url: /ch-gates/multiple-qubits-entangled-states
       previewImgUrl: /ch-gates/overview/multiple-qubits-entangled-states.png
     - title: Phase kickback
       id: phase-kickback
-      uuid: 5ae8a039-c6b8-457b-b715-45b982da9066
+      uuid: cb7353ec-b519-11ec-b909-0242ac120002
       url: /ch-gates/phase-kickback
       previewImgUrl: /ch-gates/overview/phase-kickback.png
-    - title: More circuit identities
-      id: more-circuit-identities
-      uuid: ec0ec04b-8e3f-42ec-8c4d-2ce272da0f5c
-      url: /ch-gates/more-circuit-identities
-      previewImgUrl: /ch-gates/overview/more-circuit-identities.png
+    - title: Basic circuit identities
+      id: basic-circuit-identities
+      uuid: ce8ce75a-b519-11ec-b909-0242ac120002
+      url: /ch-gates/basic-circuit-identities
+      previewImgUrl: /ch-gates/overview/basic-circuit-identities.png
     - title: Proving universality
       id: proving-universality
-      uuid: 6fb03c93-ec1f-4673-ae2f-7f76523d1ecc
+      uuid: d15d3548-b519-11ec-b909-0242ac120002
       url: /ch-gates/proving-universality
       previewImgUrl: /ch-gates/overview/proving-universality.png
     - title: Classical computation on a quantum computer 
-      id: oracles
-      uuid: bb65f75f-6cd3-4bad-a33c-3d4d52eed33a
+      id: classical-computation-on-a-quantum-computer
+      uuid: d4f6e424-b519-11ec-b909-0242ac120002
       url: /ch-gates/oracles
       previewImgUrl: /ch-gates/overview/oracles.png
 
@@ -477,48 +477,48 @@
         link: http://cleve.iqc.uwaterloo.ca/resources/QIC-710-F21/Qic710QuantumAlgorithmsPart3.pdf
   sections:
     - title: Defining quantum circuits
-      id: defining-quantum-circuits
-      uuid: d82b1481-395a-4d12-aa4c-aca113fdead2
+      id: quantum-circuits
+      uuid: d90cbfb6-b519-11ec-b909-0242ac120002
       url: /ch-algorithms/defining-quantum-circuits
       previewImgUrl: /ch-algorithms/overview/defining-quantum-circuits.png
     - title: Deutsch-Jozsa algorithm
-      id: deutsch-jozsa
-      uuid: 0a75bcd7-a363-4908-89cc-3aa360cb59c0
+      id: deutsch-jozsa-algorithm
+      uuid: dc9d3aa2-b519-11ec-b909-0242ac120002
       url: /ch-algorithms/deutsch-jozsa
       previewImgUrl: /ch-algorithms/overview/deutsch-jozsa.png
     - title: Bernstein-Vazirani algorithm
-      id: bernstein-vazirani
-      uuid: e473061e-9ba3-4f36-93be-2b6a7129a7e4
+      id: bernstein-vazirani-algorithm
+      uuid: df6e5a40-b519-11ec-b909-0242ac120002
       url: /ch-algorithms/bernstein-vazirani
       previewImgUrl: /ch-algorithms/overview/bernstein-vazirani.png
     - title: Simon's algorithm
-      id: simon
-      uuid: 52e29c1f-b234-4b57-b23b-2f58d39f0d3a
+      id: simons-algorithm
+      uuid: e2714126-b519-11ec-b909-0242ac120002
       url: /ch-algorithms/simon
       previewImgUrl: /ch-algorithms/overview/simon.png
     - title: Quantum Fourier transform
       id: quantum-fourier-transform
-      uuid: 15946030-3bc3-4454-8e30-7130d46571f0
+      uuid: e59ba472-b519-11ec-b909-0242ac120002
       url: /ch-algorithms/quantum-fourier-transform
       previewImgUrl: /ch-algorithms/overview/quantum-fourier-transform.png
     - title: Quantum phase estimation
       id: quantum-phase-estimation
-      uuid: 1c85e539-caa1-48fb-a8a0-087f26390dde
+      uuid: e8ac9ec8-b519-11ec-b909-0242ac120002
       url: /ch-algorithms/quantum-phase-estimation
       previewImgUrl: /ch-algorithms/overview/quantum-phase-estimation.png
     - title: Shor's algorithm
-      id: shor
-      uuid: 8fefe2ae-acbb-4169-a10f-2812dc133a0a
+      id: shors-algorithm
+      uuid: ec157cd8-b519-11ec-b909-0242ac120002
       url: /ch-algorithms/shor
       previewImgUrl: /ch-algorithms/overview/shor.png
     - title: Grover's algorithm
-      id: grover
-      uuid: 07306770-39db-422e-9342-0eb11ff134a1
+      id: grovers-algorithm
+      uuid: eebb7488-b519-11ec-b909-0242ac120002
       url: /ch-algorithms/grover
       previewImgUrl: /ch-algorithms/overview/grover.png
     - title: Quantum counting
       id: quantum-counting
-      uuid: a9e2fab0-3dae-4c57-8e69-b03d14417350
+      uuid: f1a9942c-b519-11ec-b909-0242ac120002
       url: /ch-algorithms/quantum-counting
       previewImgUrl: /ch-algorithms/overview/quantum-counting.png
     - title: Quantum walk search algorithm
@@ -528,22 +528,22 @@
       previewImgUrl: /ch-algorithms/overview/quantum-walk-search-algorithm.png
     - title: Hidden shift problem
       id: hidden-shift-problem
-      uuid: b56db435-4041-400d-88c8-433ae9c323ed
+      uuid: 56d13a0c-cae7-11ec-9d64-0242ac120002
       url: /ch-algorithms/hidden-shift-problem
       previewImgUrl: /ch-algorithms/overview/hidden-shift-problem.png
     - title: Quantum key distribution
       id: quantum-key-distribution
-      uuid: ff984a87-a478-4075-acf3-f908a18caaa1
+      uuid: fbafa8c6-b519-11ec-b909-0242ac120002
       url: /ch-algorithms/quantum-key-distribution
       previewImgUrl: /ch-algorithms/overview/quantum-key-distribution.png
     - title: Superdense coding
       id: superdense-coding
-      uuid: 48fcfc77-d1a2-48cb-a05b-6fc307576545
+      uuid: f87cbd42-b519-11ec-b909-0242ac120002
       url: /ch-algorithms/superdense-coding
       previewImgUrl: /ch-algorithms/overview/superdense-coding.png
     - title: Quantum teleportation
-      id: teleportation
-      uuid: b7a244c0-865a-44b5-9fc4-f5931bf6e7ca
+      id: quantum-teleportation
+      uuid: f4f4a090-b519-11ec-b909-0242ac120002
       url: /ch-algorithms/teleportation
       previewImgUrl: /ch-algorithms/overview/teleportation.png
 
@@ -575,53 +575,53 @@
         link: https://learn.qiskit.org/course/ch-prerequisites/introduction-to-python-and-jupyter-notebooks
   sections:
     - title: Solving linear systems of equations using HHL 
-      id: hhl_tutorial
-      uuid: 327e69ea-036a-4d08-b6d1-fac9696ff137
+      id: solving-linear-systems-of-equations-using-hhl-and-its-qiskit-implementation
+      uuid: 01484810-b51a-11ec-b909-0242ac120002
       url: /ch-applications/hhl_tutorial
       previewImgUrl: /ch-applications/overview/hhl.png
     - title:  Simulating molecules using VQE 
-      id: vqe-molecules
-      uuid: c06c6ef1-a143-4d02-a70f-f83e63209c2a
+      id: simulating-molecules-using-vqe
+      uuid: 041df288-b51a-11ec-b909-0242ac120002
       url: /ch-applications/vqe-molecules
       previewImgUrl: /ch-applications/overview/vqe-molecules.png
     - title: Solving combinatorial optimization problems using QAOA 
-      id: qaoa
-      uuid: ba878944-1cb7-4e0f-ad84-1de52f51ce34
+      id: solving-combinatorial-optimization-problems-using-qaoa
+      uuid: 06ff7ada-b51a-11ec-b909-0242ac120002
       url: /ch-applications/qaoa
       previewImgUrl: /ch-applications/overview/qaoa.png
     - title: Solving satisfiability problems using Grover's algorithm 
-      id: satisfiability-grover
-      uuid: c8a491c9-5acf-4b0c-b102-75b7a7a31bc6
+      id: solving-satisfiability-problems-using-grovers-algorithm
+      uuid: 09d1529c-b51a-11ec-b909-0242ac120002
       url: /ch-applications/satisfiability-grover
       previewImgUrl: /ch-applications/overview/satisfiability-grover.png
     - title: Hybrid quantum-classical neural networks with PyTorch and Qiskit 
-      id: machine-learning-qiskit-pytorch
-      uuid: 6cf9c3ca-c443-49bb-be9f-5dc552e55a0c
+      id: hybrid-quantum-classical-neural-networks-with-pytorch-and-qiskit
+      uuid: 0cac4d14-b51a-11ec-b909-0242ac120002
       url: /ch-machine-learning/machine-learning-qiskit-pytorch
       previewImgUrl: /ch-applications/overview/machine-learning-qiskit-pytorch.png
     - title: Quantum image processing - FRQI and NEQR image representations 
-      id: image-processing-frqi-neqr
-      uuid: e99a0035-2e34-44f7-8591-505c213fa65f
+      id: flexible-representation-of-quantum-images-frqi
+      uuid: 14acf6a8-b51a-11ec-b909-0242ac120002
       url: /ch-applications/image-processing-frqi-neqr
       previewImgUrl: /ch-applications/overview/image-processing-frqi-neqr.png
     - title: Facial expression recognition
       id: facial-expression-recognition
-      uuid: 6fe61bd6-eb8f-49bf-bf77-cb6519393867
+      uuid: 22cb8bf2-cae9-11ec-9d64-0242ac120002
       url: /ch-applications/facial-expression-recognition
       previewImgUrl: /ch-applications/overview/facial-expression-recognition.png
     - title: Quantum edge detection
       id: quantum-edge-detection
-      uuid: d7098e25-fc03-46f1-a25d-df98c9ea6b3f
+      uuid: 3e202caa-cae9-11ec-9d64-0242ac120002
       url: /ch-applications/quantum-edge-detection
       previewImgUrl: /ch-applications/overview/quantum-edge-detection.png
     - title: Solving the travelling salesman problem using phase estimation 
       id: tsp
-      uuid: 795671b7-b6c4-4eb2-b599-67249f510021
+      uuid: 443c52b2-cae9-11ec-9d64-0242ac120002
       url: /ch-paper-implementations/tsp
       previewImgUrl: /ch-applications/overview/tsp.png
     - title: Variational quantum linear solver 
-      id: vqls
-      uuid: dd36ee62-5b3d-4f01-9684-702859702f25
+      id: the-variational-quantum-linear-solver
+      uuid: 1163f456-b51a-11ec-b909-0242ac120002
       url: /ch-paper-implementations/vqls
       previewImgUrl: /ch-applications/overview/vqls.png
 
@@ -649,28 +649,28 @@
         link: https://learn.qiskit.org/course/ch-gates/introduction
   sections:
     - title: Introduction to quantum error correction using repetition codes
-      id: error-correction-repetition-code
-      uuid: 20e45231-2ac8-4e3c-b695-af8121ff84bf
+      id: introduction-to-quantum-error-correction-via-the-repetition-code
+      uuid: 197f7f66-b51a-11ec-b909-0242ac120002
       url: /quantum-hardware/error-correction-repetition-code
       previewImgUrl: /quantum-hardware/overview/error-correction-repetition-code.png
     - title: Measurement error mitigation
       id: measurement-error-mitigation
-      uuid: ebce5629-1f24-49ec-85dd-75a8946ee867
+      uuid: 1c5bd31a-b51a-11ec-b909-0242ac120002
       url: /quantum-hardware/measurement-error-mitigation
       previewImgUrl: /quantum-hardware/overview/measurement-error-mitigation.png
     - title: Randomized benchmarking
       id: randomized-benchmarking
-      uuid: f55fa9e5-76a2-4404-a7cf-2bed19296e8d
+      uuid: 1fa1d22c-b51a-11ec-b909-0242ac120002
       url: /quantum-hardware/randomized-benchmarking
       previewImgUrl: /quantum-hardware/overview/randomized-benchmarking.png
     - title: Measuring quantum volume
       id: measuring-quantum-volume
-      uuid: 4464a972-1a00-4837-93fb-6dad869915bb
+      uuid: 22ab0bd2-b51a-11ec-b909-0242ac120002
       url: /quantum-hardware/measuring-quantum-volume
       previewImgUrl: /quantum-hardware/overview/measuring-quantum-volume.png
     - title: The density matrix and mixed states 
       id: density-matrix
-      uuid: 9f785388-6fab-4c13-b323-4d98cf215c03
+      uuid: 498dce44-cae9-11ec-9d64-0242ac120002
       url: /quantum-hardware/density-matrix
       previewImgUrl: /quantum-hardware/overview/density-matrix.png
 
@@ -704,38 +704,38 @@
         link: https://learn.qiskit.org/course/ch-prerequisites/introduction-to-python-and-jupyter-notebooks
   sections:
     - title: Calibrating qubits with Qiskit Pulse
-      id: calibrating-qubits-pulse
-      uuid: d5d46aab-e7b6-4fe0-9014-d367c0f84a0b
+      id: calibrating-qubits-using-qiskit-pulse
+      uuid: 292100ca-b51a-11ec-b909-0242ac120002
       url: /quantum-hardware-pulses/calibrating-qubits-pulse
       previewImgUrl: /quantum-hardware-pulses/overview/calibrating-qubits-pulse.png
     - title: Accessing higher energy states
-      id: accessing_higher_energy_states
-      uuid: 582f497c-a85d-473b-8647-b013dd46570d
+      id: accessing-higher-energy-states-with-qiskit-pulse
+      uuid: 2bf0d316-b51a-11ec-b909-0242ac120002
       url: /quantum-hardware-pulses/accessing_higher_energy_states
       previewImgUrl: /quantum-hardware-pulses/overview/accessing_higher_energy_states.png
     - title: Introduction to transmon physics
-      id: transmon-physics
-      uuid: 4ab2e5de-4d37-4229-afac-422cacca6b9b
+      id: introduction-to-transmon-physics
+      uuid: 2e944e0e-b51a-11ec-b909-0242ac120002
       url: /quantum-hardware-pulses/transmon-physics
       previewImgUrl: /quantum-hardware-pulses/overview/transmon-physics.png
     - title: Circuit quantum electrodynamics
-      id: cQED-JC-SW
-      uuid: d828436b-8b34-481b-99a8-aea23481a6ec
+      id: circuit-quantum-electrodynamics
+      uuid: 31b2ccdc-b51a-11ec-b909-0242ac120002
       url: /quantum-hardware-pulses/cQED-JC-SW
       previewImgUrl: /quantum-hardware-pulses/overview/cQED-JC-SW.png
     - title: Exploring the Jaynes-Cummings Hamiltonian with Qiskit Pulse
-      id: Jaynes-Cummings-model
-      uuid: ffd8ae11-df73-4710-bdbf-02190b80fa17
+      id: exploring-the-jaynes-cummings-hamiltonian-with-qiskit-pulse
+      uuid: 346d7eea-b51a-11ec-b909-0242ac120002
       url: /quantum-hardware-pulses/Jaynes-Cummings-model
       previewImgUrl: /quantum-hardware-pulses/overview/Jaynes-Cummings-model.png
     - title: Measuring the qubit ac-Stark shift 
-      id: ac-Stark-shift
-      uuid: 8f35b9fd-f144-4f38-8ce7-c7013844b09e
+      id: measuring-the-qubit-ac-stark-shift
+      uuid: 37110d92-b51a-11ec-b909-0242ac120002
       url: /quantum-hardware-pulses/ac-Stark-shift
       previewImgUrl: /quantum-hardware-pulses/overview/ac-Stark-shift.png
     - title: Hamiltonian tomography
       id: hamiltonian-tomography
-      uuid: 37cc881f-a795-43b1-85b6-cb94f9cda622
+      uuid: 3a440960-b51a-11ec-b909-0242ac120002
       url: /quantum-hardware-pulses/hamiltonian-tomography
       previewImgUrl: /quantum-hardware-pulses/overview/hamiltonian-tomography.png
 
@@ -771,47 +771,47 @@
   sections:
     - title: "Lab 1. Quantum circuits"
       id: lab-1-quantum-circuits
-      uuid: 06b6328e-69e8-4c4b-8607-dc7548409f2a
+      uuid: 3ff5a7ec-b51a-11ec-b909-0242ac120002
       url: /ch-labs/Lab01_QuantumCircuits
       previewImgUrl: /ch-labs/overview/lab1.png
     - title: "Lab 2. Single qubit gates"
       id: lab-2-single-qubit-gates
-      uuid: 06b6328e-69e8-4c4b-8607-dc7548409f2a
+      uuid: 3ff5a7ec-b51a-11ec-b909-0242ac120002
       url: /ch-labs/Lab02_Single_Qubit_Gates
       previewImgUrl: /ch-labs/overview/lab2.png
     - title: "Lab 3. Quantum measurement"
       id: lab-3-quantum-measurements
-      uuid: f66f5085-cfad-4b0e-afad-4c2c834facc9
+      uuid: 45aa5412-b51a-11ec-b909-0242ac120002
       url: /ch-labs/Lab03_QuantumMeasurement
       previewImgUrl: /ch-labs/overview/lab3.png
     - title: "Lab 4. Quantum measurement"
       id: lab-4-bell-ghz-circuit
-      uuid: f66f5085-cfad-4b0e-afad-4c2c834facc9
+      uuid: 45aa5412-b51a-11ec-b909-0242ac120002
       url: /ch-labs/Lab04_Bell_GHZ_Circuit
       previewImgUrl: /ch-labs/overview/lab4.png
     - title: "Lab 5. Accuracy of quantum phase estimation"
       id: lab-5-accuracy-of-quantum-phase-estimation
-      uuid: a7eb5082-30f7-40cd-ae87-be4f2bd7ac1b
+      uuid: 4ca77b5a-b51a-11ec-b909-0242ac120002
       url: /ch-labs/Lab05_AccuracyQPE
       previewImgUrl: /ch-labs/overview/lab5.png
     - title: "Lab 6. Iterative quantum phase estimation"
       id: lab-6-iterative-phase-estimation-algorithm
-      uuid: 4a5ad6f0-2c46-469a-a39a-aed5c81a073a
+      uuid: 502f02fc-b51a-11ec-b909-0242ac120002
       url: /ch-labs/Lab06_IterativePhaseEstimation
       previewImgUrl: /ch-labs/overview/lab6.png
     - title: "Lab 7. Scalable Shor’s algorithm"
       id: lab-7-scalable-shors-algorithm
-      uuid: d6c005d0-5475-43f6-99bc-fe8e6bfd0e80
+      uuid: 535b2b18-b51a-11ec-b909-0242ac120002
       url: /ch-labs/Lab07_Scalable_Shor_Algorithm
       previewImgUrl: /ch-labs/overview/lab7.png
     - title: "Lab 8. Grover's search with an unknown number of solutions"
       id: lab-8-grovers-search-with-an-unknown-number-of-solutions
-      uuid: fe800bb9-2f76-492f-96c9-7004804314dd
+      uuid: 571376ac-b51a-11ec-b909-0242ac120002
       url: /ch-labs/Lab08_Grover_search_with_an_unknown_number_of_solutions
       previewImgUrl: /ch-labs/overview/lab8.png
     - title: "Lab 9. Quantum simulation as a search algorithm"
       id: lab-9-quantum-simulation-as-a-search-algorithm
-      uuid: 49a957f3-8978-4cfd-86bf-a0da9fdac53f
+      uuid: 59a076f4-b51a-11ec-b909-0242ac120002
       url: /ch-labs/Lab09_QuantumSimulationSearchAlgorithm
       previewImgUrl: /ch-labs/overview/lab9.png
     - title: "Lab 10. Quantum error correction"
@@ -875,22 +875,22 @@
       url: /ch-ex/hello-qiskit
       previewImgUrl: /ch-demos/overview/hello-qiskit.png
     - title: Estimating pi using the quantum phase estimation algorithm
-      id: piday-code
-      uuid: 51b92f05-2034-4336-98ab-08f4a73714f5
+      id: estimating-pi-pi-using-quantum-phase-estimation-algorithm
+      uuid: 69b9707c-b51a-11ec-b909-0242ac120002
       url: /ch-demos/piday-code
       previewImgUrl: /ch-demos/overview/piday-code.png
     - title: Local reality and the CHSH inequality
-      id: chsh
-      uuid: ff94d476-be0a-43bc-8bc0-bd73d88bf361
+      id: local-reality-and-the-chsh-inequality
+      uuid: 6c507826-b51a-11ec-b909-0242ac120002
       url: /ch-demos/chsh
       previewImgUrl: /ch-demos/overview/chsh.png
     - title: Quantum coin game
       id: coin-game
-      uuid: eef3c646-10ba-406b-ba5a-a75e39301e88
+      uuid: 4e72eec6-cae9-11ec-9d64-0242ac120002
       url: /ch-demos/coin-game
       previewImgUrl: /ch-demos/overview/coin-game.png
     - title: Variational quantum regression
       id: variational-quantum-regression
-      uuid: 0406614c-ca6f-4d79-9b49-129827391ccf
+      uuid: 57d7e37c-cae9-11ec-9d64-0242ac120002
       url: /ch-demos/variational-quantum-regression
       previewImgUrl: /ch-demos/overview/variational-quantum-regression.png
