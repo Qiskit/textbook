@@ -10,6 +10,8 @@
 #   # The section the course will appear in. Options are 'course', 'chapter',
 #   # and 'summer-school'.
 #   type: course
+#   # The id and overview page url
+#   id: my-course
 #   # Information to appear on the overview page.
 #   overviewInfo:
 #     description:
@@ -39,8 +41,9 @@
 
 - title: Basics of quantum information
   subtitle: "Unit 1: Basics of quantum information"
-  url: /basics
   type: course
+  id: basics-quantum-information
+  url: /basics
   overviewInfo:
     thumbnailUrl: /basics/overview/header.png
     description:
@@ -116,6 +119,7 @@
       previewImgUrl: /basics/overview/circuits-and-protocols.png
 
 - title: Introduction to Quantum Computing
+  id: introduction-course
   url: /introduction
   type: course
   overviewInfo:
@@ -187,10 +191,11 @@
       previewImgUrl: /intro/overview/project.png
 
 - title: Quantum Machine Learning
+  id: machine-learning-course
   url: /machine-learning
   type: course
   overviewInfo:
-    thumbnailUrl: /intro/overview/header.png
+    thumbnailUrl: /quantum-machine-learning/overview/header.png
     description:
       short: |
         Want to learn about this exciting, developing field? If you're familiar
@@ -264,6 +269,7 @@
       previewImgUrl: /quantum-machine-learning/overview/project.png
 
 - title: Prerequisites
+  id: prerequisites
   url: /ch-prerequisites
   type: chapter
   overviewInfo:
@@ -298,6 +304,7 @@
       previewImgUrl: /ch-prerequisites/overview/environment-setup.png
 
 - title: Quantum states and qubits
+  id: quantum-states-and-qubits
   url: /ch-states
   type: chapter
   overviewInfo:
@@ -361,6 +368,7 @@
       previewImgUrl: /ch-states/overview/case-for-quantum.png
 
 - title: Multiple qubits and entanglement 
+  id: multiple-qubits-and-entanglement
   url: /ch-gates
   type: chapter
   overviewInfo:
@@ -432,6 +440,7 @@
       previewImgUrl: /ch-gates/overview/oracles.png
 
 - title: Quantum protocols and quantum algorithms
+  id: quantum-protocols-and-quantum-algorithms
   url: /ch-algorithms
   type: chapter
   overviewInfo:
@@ -548,6 +557,7 @@
       previewImgUrl: /ch-algorithms/overview/teleportation.png
 
 - title: Applied quantum algorithms 
+  id: quantum-algorithms-for-applications
   url: /ch-applications
   type: chapter
   overviewInfo:
@@ -626,6 +636,7 @@
       previewImgUrl: /ch-applications/overview/vqls.png
 
 - title: Investigating quantum hardware using quantum circuits 
+  id: quantum-hardware-circuits
   url: /quantum-hardware
   type: chapter
   overviewInfo:
@@ -675,6 +686,7 @@
       previewImgUrl: /quantum-hardware/overview/density-matrix.png
 
 - title: Investigating quantum hardware using microwave pulses
+  id: quantum-hardware-pulses
   url: /quantum-hardware-pulses
   type: chapter
   overviewInfo:
@@ -740,6 +752,7 @@
       previewImgUrl: /quantum-hardware-pulses/overview/hamiltonian-tomography.png
 
 - title: Quantum computing labs 
+  id: quantum-computing-labs
   url: /ch-labs
   type: chapter
   overviewInfo:
@@ -820,29 +833,8 @@
       url: /ch-labs/Lab10_QEC
       previewImgUrl: /ch-labs/overview/lab10.png
 
-- title: ch-appendix
-  url: /ch-appendix
-  type: chapter
-  overviewInfo:
-    thumbnailUrl: /ch-appendix/overview/header.png
-    description:
-      short: |
-        These pages are not part of any chapter.
-      long: |
-        These pages are not part of any chapter.
-  sections:
-    - title: Qiskit
-      id: qiskit
-      uuid: b19f5173-5650-4a99-9ccd-076f561c4f24
-      url: /ch-appendix/qiskit
-      previewImgUrl: /ch-appendix/overview/qiskit.png
-    - title: Linear algebra
-      id: linear_algebra
-      uuid: cb5d33e0-d7cd-41ae-8981-999632fba5e3
-      url: /ch-appendix/linear_algebra
-      previewImgUrl: /ch-appendix/overview/linear_algebra.png
-
 - title: Games and demos
+  id: games-and-demos
   url: /ch-demos
   type: chapter
   overviewInfo:
@@ -894,3 +886,28 @@
       uuid: 57d7e37c-cae9-11ec-9d64-0242ac120002
       url: /ch-demos/variational-quantum-regression
       previewImgUrl: /ch-demos/overview/variational-quantum-regression.png
+
+- title: ch-appendix
+  id: appendix
+  url: /ch-appendix
+  type: chapter
+  overviewInfo:
+    thumbnailUrl: /ch-appendix/overview/header.png
+    description:
+      short: |
+        These pages are not part of any course or chapter.
+      long: |
+        These pages are not part of any chapter.
+  sections:
+    - title: Qiskit
+      id: qiskit
+      uuid: b19f5173-5650-4a99-9ccd-076f561c4f24
+      url: /ch-appendix/qiskit
+      previewImgUrl: /ch-appendix/overview/qiskit.png
+    - title: Linear algebra
+      id: linear_algebra
+      uuid: cb5d33e0-d7cd-41ae-8981-999632fba5e3
+      url: /ch-appendix/linear_algebra
+      previewImgUrl: /ch-appendix/overview/linear_algebra.png
+
+
