@@ -1,4 +1,5 @@
 #!/bin/sh
+set -e
 
 # Setup Python venv and install packages
 echo "Setting up Python virtual environment in ./.venv"
@@ -29,4 +30,5 @@ else
     deactivate  
 fi
 
-echo "\nQiskit Textbook setup complete!\n"
+echo ""
+echo "Qiskit Textbook setup complete!"
