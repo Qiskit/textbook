@@ -1,5 +1,5 @@
 ---
-name: "Content inaccuracy \U0001F62E"
+name: "Inaccuracy \U0001F62E"
 about: Something written in the textbook is incorrect
 title: ''
 labels: bug
