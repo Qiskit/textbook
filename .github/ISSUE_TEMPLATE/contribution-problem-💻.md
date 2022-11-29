@@ -1,5 +1,5 @@
 ---
-name: Contribution problem
+name: "Contribution problem \U0001F4BB"
 about: There is a problem when contributing to this repo
 title: ''
 labels: bug, tools

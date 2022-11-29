@@ -1,5 +1,5 @@
 ---
-name: Content improvement
+name: "Content improvement \U0001F680"
 about: Something written in the textbook is unclear, or could be improved
 title: ''
 labels: Discussion, enhancement
