@@ -2,6 +2,17 @@
 
 Thanks for contributing to the Qiskit Textbook! The general process is:
 
+```mermaid
+flowchart LR
+  stepInstall[Install]
+  stepDownload[Download]
+  stepFix[Fix problem]
+  stepShare[fa:code-pull-request Make a pull request]
+  stepInstall --> stepDownload
+  stepDownload --> stepFix
+  stepFix --> stepShare
+```
+
 1. Install the software
 2. Download a copy of the Textbook
 3. Make the changes you want to see
@@ -14,16 +25,37 @@ You'll need some software installed to work on this repository (repo). We can
 install some packages for you automatically, but you'll need to install the
 following packages manually. We recommend you install these first.
 
+**MacOS users**: We recommend installing [Homebrew](https://brew.sh/) to manage
+these installations, this should make things much easier. For each package,
+open a terminal and run the Homebrew command (`brew install …`).
+
 - [Python 3.8](https://www.python.org/): To run Qiskit and Jupyter notebook.
+  Make sure you choose version 3.8.
+
+  To install through Homebrew, open a terminal and run 
+
+  ```bash
+  brew install python@3.8
+  ```
+
 - [Git](https://git-scm.com): To save and share your changes.
 
-  If using Windows, choose to install Bash through the installer.
+  MacOS users with use Homebrew can install Git through the command
+  
+  ```bash
+  brew install git
+  ```
 
-The following packages are not necessary, but we recommend installing them to
-improve your experience working with this repo:
+  If using Windows, choose to install Bash when asked by the installer.
+
+We recommend installing the following packages to make working with this repo
+easier (especially for new contributors):
 
 - [Direnv](https://direnv.net/): To automatically switch environments when in
   this directory.
+
+  Install through Homebrew with `brew install direnv`.
+
 - [GitHub Desktop](https://desktop.github.com/) _or_ [GitHub
   CLI](https://cli.github.com/): To easily work with github.com. If you're new
   to Git, we recommend the desktop application.
@@ -33,28 +65,31 @@ first time contributors):
 
 - [Vale linter](https://vale.sh/): Used for one of the tests.
 
+  Install through Homebrew with `brew install vale`.
+
 
 ## 2. Fork & download the Textbook
 
 For your first contribution, you'll need to _fork_ the Textbook repository by
-clicking the 'fork' button on the top right corner of the page.
+clicking the 'fork' button on the top right corner of this page.
 
-Now, you can download (clone) your forked repository.
-
-For GitHub Desktop users, make sure you're looking
-at the web page for your fork (the url will be
-`github.com/your-user-name/textbook`, _not_ `github.com/Qiskit/textbook`).
-Then click the green 'code' button and choose 'Open with GitHub Desktop'.
+Now, you can download (clone) your forked repository. For GitHub Desktop users,
+make sure you're looking at the web page for your fork (the url will be
+`github.com/your-user-name/textbook`, _not_ `github.com/Qiskit/textbook`). Then
+click the green 'code' button and choose 'Open with GitHub Desktop'.
 
 Next, you'll need to install the specific packages we use in the Textbook, and
-set up your environment. To set up automatically, you'll need to open a terminal in this folder.
+set up your environment. To set up automatically, first open a terminal in this
+folder.
 
-- **OSX Users**:
+- **OSX users**:
     1. Open this repo folder in Finder
-    2. in Finder, select _View > Show Path Bar_ to display the path in the finder window
-    3. Right click on the _textbook_ folder and choose _Open in Terminal_.
+    2. in Finder, select _View > Show Path Bar_ to display the path in the
+       finder window
+    3. Right click on the _textbook_ folder in the path bar and choose _Open in
+       Terminal_.
 
-- **Windows Users**:
+- **Windows users**:
     1. Open the Git Bash console from the start menu
     2. Navigate to this folder with the `cd` command, for example:
       ```
@@ -112,6 +147,20 @@ guide](https://docs.github.com/en/desktop/contributing-and-collaborating-using-g
 on making changes using GitHub Desktop.
 
 ### Editing notebooks
+
+```mermaid
+flowchart LR
+  stepNewBranch[Create new branch]
+  stepEdit[Make changes with Jupyter notebook]
+  stepCommit[Commit changes]
+  stepShare[Make pull request]
+  stepReset[Switch back to main branch]
+  stepNewBranch --> stepEdit
+  stepEdit --> stepCommit
+  stepCommit --> stepShare
+  stepShare --> stepReset
+  stepReset --> stepNewBranch
+```
 
 Once on the appropriate branch, you can edit a notebook by navigating to this
 repo in a terminal and running
