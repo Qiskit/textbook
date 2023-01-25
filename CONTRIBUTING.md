@@ -2,13 +2,18 @@
 
 Thanks for contributing to the Qiskit Textbook! The general process is:
 
-1. Install the software
-2. Download a copy of the Textbook
-3. Make the changes you want to see
-4. Upload your changes and request to merge them into the Textbook (known as a
+0. Install the software
+1. Download a copy of the Textbook
+2. Make the changes you want to see
+3. Upload your changes and request to merge them into the Textbook (known as a
    _pull request_).
 
-## 1. Installation
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="https://user-images.githubusercontent.com/36071638/214533485-c6843bc4-c71a-4222-b571-86ae4e0a2b3a.svg">
+  <img alt="High-level illustration of the contributing workflow" src="https://user-images.githubusercontent.com/36071638/214533199-208cfa2c-b30e-4967-81ba-91dfc6363756.svg">
+</picture>
+
+## 0. Installation
 
 You'll need some software installed to work on this repository (repo). We can
 install some packages for you automatically, but you must install the
@@ -16,16 +21,19 @@ following packages manually. We recommend doing this first.
 
 > <details>
 >   <summary>MacOS install instructions</summary>
->
 > 
->   We recommend installing [Homebrew](https://brew.sh/) to manage
->   these installations. Once installed, you can open a terminal and run:
+>   We recommend installing [Homebrew](https://brew.sh/) to manage your
+>   installations. You can think of Homebrew as an app store. This saves you
+>   from using each program's manual installer, and makes updating and
+>   uninstalling easier.
+>   
+>   With Homebrew installed, you can open a terminal and run:
 >   
 >   ```bash
 >   brew install python@3.8 git direnv vale
 >   ```
 >   
->   The only thing Homebrew can't install is GitHub Desktop, which we
+>   The only thing Homebrew _can't_ install is GitHub Desktop, which we
 >   recommend to first-time contributors. Please go to the [GitHub Desktop
 >   download page](https://desktop.github.com/) to install manually.
 >   
@@ -45,16 +53,16 @@ Software used:
 - [Vale linter](https://vale.sh/): Used for one of the tests.
 
 
-## 2. Fork & download the Textbook
+## 1. Fork & download the Textbook
 
-### 2.1 Fork
+### 1.1 Fork
 
 For your first contribution, you'll need to _fork_ the Textbook repository by
-clicking [this link](https://github.com/Qiskit/textbook/fork), or clicking the
-'fork' button on the top right corner of this page. This creates a copy of the
-repo, owned by your GitHub account.
+clicking [this link](https://github.com/Qiskit/textbook/fork), this will take
+you to a new page. Click _Create fork_. This creates a copy of the repo, owned
+by your GitHub account.
 
-### 2.2 Download
+### 1.2 Clone
 
 Now, you can download (clone) your forked repository. For GitHub Desktop users,
 make sure you're looking at the web page for your fork (the url will be
@@ -63,32 +71,17 @@ click the green _code_ button and choose _Open with GitHub Desktop_.
 
 <img src="https://user-images.githubusercontent.com/36071638/212101928-2e8d5119-b024-4000-a00a-07989187713a.png" width="350px">
 
-### 2.3 Setup
+Then click _clone_. This will download the textbook repo to a folder on your
+computer. If you use GitHub Desktop, this folder will be at
+`Documents/GitHub/textbook`.
 
-Next, you'll install the specific packages we use in the Textbook and
-set up your environment. To set up automatically, first open a terminal in this
-folder.
+### 1.3 Setup
 
-> **Opening a terminal in a folder**
-> <details>
->   <summary>MacOS instructions</summary>
->
->   1. Open this repo folder in Finder
->   2. in Finder, select _View > Show Path Bar_ to display the path in the
->      finder window
->   3. Right click on the _textbook_ folder in the path bar and choose _Open in
->      Terminal_.
-> </details>
->
-> <details>
->   <summary>Windows instructions</summary>
->
->   1. Open the Git Bash console from the start menu
->   2. Navigate to this folder with the `cd` command, for example:<br><br>
->      ```bash
->      cd C:/path/to/textbook
->      ```
-> </details>
+Next, install the specific packages we use in the Textbook and set up your
+environment. To set up automatically, first open a terminal in the repo folder.
+
+> ℹ️  GitHub Desktop users can do this through the app by going to _Repository >
+> Open in Terminal_.
 
 with your terminal in this folder, run:
 
@@ -121,22 +114,7 @@ This may take a while. When it's finished, you'll see `Qiskit Textbook setup
 complete!`
 
 
-## 3. Making changes to the Textbook
-
-
-```mermaid
-flowchart LR
-  stepNewBranch[Create new branch]
-  stepEdit[Edit with Jupyter notebook]
-  stepCommit[Commit changes]
-  stepShare[Make pull request]
-  stepReset[Switch back to main branch]
-  stepNewBranch --> stepEdit
-  stepEdit --> stepCommit
-  stepCommit --> stepShare
-  stepShare --> stepReset
-  stepReset --> stepNewBranch
-```
+## 2. Making changes to the Textbook
 
 The source for each page in the Textbook is a [Jupyter
 notebook](https://jupyter.org/), a file format that combines
@@ -145,21 +123,23 @@ notebook](https://jupyter.org/), a file format that combines
 images). To contribute to the Qiskit Textbook, you must edit these
 notebooks, then share your changes with us via GitHub.
 
-### 3.1 Making a new branch
+### 2.1 Making a new branch
 
 First, make a new branch named after the changes you plan on
 making (for example, `fix-issue-544`).
 
-> ℹ️ GitHub Desktop users: see [Committing and reviewing changes to your
-project](https://docs.github.com/en/desktop/contributing-and-collaborating-using-github-desktop/making-changes-in-a-branch/committing-and-reviewing-changes-to-your-project).
+> ℹ️ GitHub Desktop users can do this through the app. See  [Managing
+> branches](https://docs.github.com/en/desktop/contributing-and-collaborating-using-github-desktop/making-changes-in-a-branch/managing-branches)
+> for more information.
 
-### 3.2 Editing notebooks
+### 2.2 Editing notebooks
 
 Once on the appropriate branch, you can edit a notebook by navigating to this
 repo in a terminal and running
 
 ```
-jupyter notebook
+source .venv/bin/activate
+python -m notebook
 ```
 
 This will open Jupyter notebook, which you can use to make your changes.
@@ -170,15 +150,30 @@ The Qiskit Textbook also includes some extra features that we can't display in
 the notebook editor. We use a special syntax to tell the Textbook website where
 and how to insert these features. (TODO: include more about this).
 
-### 3.3 Saving your changes
+### 2.3 Saving your changes
 
 Once you've made your changes, you must save (commit) them using Git.
 
 > ℹ️ GitHub Desktop users: see [Committing and reviewing changes to your
 project](https://docs.github.com/en/desktop/contributing-and-collaborating-using-github-desktop/making-changes-in-a-branch/committing-and-reviewing-changes-to-your-project).
 
+> :warning: If you get an error when comitting through GitHub Desktop, use the workaround below.
+> <details>
+>   <summary>Workaround</summary>
+>     <p>We run some scripts on commit to search for common problems in notebooks, but
+>     sometimes GitHub Desktop can't find these scripts. To fix, you'll need to
+>     open the application from the textbook folder.</p>
+>     <ol>
+>     <li>Install the CLI tool (Go to the application menu and choose <i>Install
+>     Command Line Tool</i>),</li>
+>     <li>open a terminal in the repo (<i>Repository > Open in Terminal</i>),</li>
+>     <li>close GitHub Desktop,</li>
+>     <li>run the <code>github</code> command in the terminal,</li>
+>     </ol>
+>     <p>then continue committing your changes.</p>
+> </details>
 
-## 4. Make a pull request
+## 3. Make a pull request
 
 With your changes made and committed, you can now push these changes to GitHub,
 and ask us to consider incorporating them into the Textbook.
