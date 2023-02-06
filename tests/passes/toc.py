@@ -3,11 +3,11 @@
 import yaml
 from pathlib import Path
 
-TOC_PATH = Path('notebooks/toc.yaml')
-NOTEBOOKS_PATH = Path('notebooks')
+NOTEBOOKS_PATH = Path('./notebooks')
+TOC_PATH = NOTEBOOKS_PATH / Path('toc.yaml')
 
 def check_exists(path):
-    path = Path(path)
+    path = NOTEBOOKS_PATH / path.strip('/')
     if not path.exists():
         raise AssertionError(
                 f"No file: {path}\n\n"
@@ -23,14 +23,14 @@ def check_resource(resource):
                     f"for '{key}'.")
 
 def check_page(page):
-    check_exists('./notebooks'+ page['url'] + '.ipynb')
-    check_exists('./notebooks'+ page['previewImgUrl'])
+    check_exists(page['url'] + '.ipynb')
+    check_exists(page['previewImgUrl'])
 
 def check_course(course):
     assert course['type'] in ['chapter', 'course', 'summer-school']
     overview = course['overviewInfo']
-    check_exists('./notebooks' + overview['thumbnailUrl'])
     _, _ = overview['description']['short'], overview['description']['long']
+    check_exists(overview['thumbnailUrl'])
     for key in overview.keys():
         assert key in ['description',
                        'thumbnailUrl',
