@@ -37,6 +37,7 @@ following packages manually. We recommend doing this first.
 >   recommend to first-time contributors. Please go to the [GitHub Desktop
 >   download page](https://desktop.github.com/) to install manually.
 >   
+>   You may also want to hook `direnv` into your shell (see [guide](https://direnv.net/docs/hook.html).
 >   Once complete, you can skip to [the next step](#2-fork--download-the-textbook).
 >   
 > </details>

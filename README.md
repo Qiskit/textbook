@@ -8,8 +8,17 @@ webpage](https://qiskit.org/learn/).
 If you've found a problem in the textbook, please [make a new
 issue](https://github.com/Qiskit/textbook/issues/new/choose).
 
-If you want to make changes to the textbook, please check out the
-[contributing guide](./CONTRIBUTING.md).
+## Contributing
+
+OSX/Linux users can quickly set up by running
+
+```sh
+./install.sh
+source .venv/bin/activate
+```
+
+For a more detailed guide, please check out the
+[contributing document](./CONTRIBUTING.md).
 
 
 ## Versioning
