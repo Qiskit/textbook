@@ -1,0 +1,54 @@
+- title: Pré-requisitos
+  url: /ch-prerequisites
+  sections:
+    - id: environment-setup-guide-to-work-with-qiskit-textbook
+      uuid: a5a86ddc-b519-11ec-b909-0242ac120002
+      url: /ch-prerequisites/setting-the-environment
+    - id: introduction-to-python-and-jupyter-notebooks
+      uuid: a9f5ea68-b519-11ec-b909-0242ac120002
+      url: /ch-prerequisites/python-and-jupyter-notebooks
+
+
+- title: Algoritmos Quânticos
+  url: /algorithms
+  type: learning-path
+  sections:
+    - id: phase-kickback
+      uuid: 976e9da6-6c33-4e2f-b7eb-f9588f700f07
+      url: /algorithms/phase-kickback
+
+
+- title: Introdução à computação quântica
+  url: /introduction
+  type: learning-path
+  sections:
+    - uuid: bdb1d662-e0f6-428a-8830-befe6b47f320
+      id: why-quantum-computing
+      url: /intro/why-quantum-computing
+    - id: the-atoms-of-computation
+      uuid: 37ef477e-ab8d-11ec-b909-0242ac120002
+      url: /intro/atoms-of-computation
+    - id: what-is-quantum
+      uuid: 7c765036-aebc-11ec-b909-0242ac120002
+      url: /intro/what-is-quantum
+    - id: describing-quantum-computers
+      uuid: 9260a554-aebc-11ec-b909-0242ac120002
+      url: /intro/describing-quantum-computers
+    - id: entangled-states
+      uuid: 98aa9032-aebc-11ec-b909-0242ac120002
+      url: /intro/entangled-states
+    - id: visualizing-entanglement
+      uuid: 9e8ceb9e-aebc-11ec-b909-0242ac120002
+      url: /intro/visualizing-entanglement
+    - id: project
+      uuid: e25c3f90-aebd-11ec-b909-0242ac120002
+      url: /intro/project
+
+
+- title: Aprendizado de máquina quântico
+  url: /machine-learning
+  type: learning-path
+  sections:
+    - id: data-encoding
+      uuid: 1d09af66-b51b-11ec-b909-0242ac120002
+      url: /quantum-machine-learning/encoding
