@@ -1,0 +1,103 @@
+Accept &amp; Continue: Aceptar y Continuar
+Access your: Accede a
+account page: la página de tu cuenta
+Account: Cuenta
+Advocates: Advocates
+and copy the value from the API token input.: y copia el valor de la entrada del token de API.
+API Token: Token de API
+Back to course overview: Regresar a la descripción general del curso
+Back to textbook home: Regresar a la página principal del libro de texto
+Binary: Binario
+Browse all content: Explorar todo el contenido
+By clicking &ldquo;Accept &amp; Continue&rdquo;, you agree to the Qiskit End User Agreement.: Al hacer clic en &ldquo;Aceptar y Continuar&rdquo;, estás aceptando el Acuerdo de Usuario Final de Qiskit.
+Cancel: Cancelar
+Circuit: Circuito
+Classroom: Aula
+Click the button below to delete your user account.: Haz clic en el botón de abajo para eliminar tu cuenta de usuario.
+Code in the scratchpad will not be saved.: El código en el bloc de pruebas no será guardado.
+Community: Comunidad
+Connecting to the server: Conectando al servidor
+Copied!: ¡Copiado!
+Copy to notebook notes: Copiar a notas del cuaderno
+Copy: Copiar
+Create a curated learning path for your students, using Qiskit Textbook Chapters, Labs, and Summer Schools: Crea un plan de aprendizaje seleccionado para tus alumnos, utilizando Capítulos del Libro de Texto, Laboratorios y Escuelas de Verano de Qiskit
+Create a customizable syllabus and share it with your students.: Crea un plan de estudios personalizable y compártelo con tus alumnos.
+Create a syllabus: Crear un plan de estudios
+Create a Syllabus: Crear un Plan de Estudios
+Create an account in: Crea una cuenta en
+create an account: crea una cuenta
+Decimal: Decimal
+Delete account: Eliminar cuenta
+Delete your account?: ¿Eliminar tu cuenta?
+Deleting your account is a permanent action that cannot be undone. Please type “delete” to continue.: Eliminar tu cuenta es una acción permanente que no se puede deshacer. Escribe “eliminar” para continuar.
+Description: Descripción
+Documentation: Documentación
+Drag from here: Arrastra desde aquí
+Drop blocks here: Suelta los bloques aquí
+Email: Email
+Events: Eventos
+Eventually, all the vocabulary and mathematics from this section will be shown here. Until then, you can visit the: Eventualmente, todo el vocabulario y las matemáticas de esta sección se mostrarán aquí. Hasta entonces, puedes visitar el
+Failed to execute. Please refresh the page.: Error al ejecutar. Actualiza la página.
+Gates: Compuertas
+Glossary: Glosario
+Grade: Calificar
+Grading: Calificando
+Here are your active syllabi. You can edit, publish, and share them with your students: Aquí están tus planes de estudio activos. Puedes editarlos, publicarlos y compartirlos con tus alumnos
+Hide details: Ocultar detalles
+Hide index: Ocultar índice
+How to read this: Cómo leer esto
+IBM id: IBM id
+IBM Privacy Statement: Declaración de Privacidad de IBM
+IBM Quantum End User Agreement: Acuerdo de Usuario Final de IBM Quantum
+Input: Entrada
+Keep Going: Continúa
+Language not yet available: Idioma aún no disponible
+Learn quantum computing with Qiskit.: Aprende computación cuántica con Qiskit.
+Learn: Aprender
+Learning: Aprendizaje
+Lesson Notes: Notas de la Lección
+Log Out: Cerrar sesión
+Login: Iniciar sesión
+Math notations: Notaciones matemáticas
+Miss the old version of the textbook? Access it <a href="https://qiskit.org/textbook" onclick="textbook.trackClickEvent('old-textbook-version', 'banner')" target="_blank">here</a>: ¿Echas de menos la versión anterior del libro de texto? Accédela <a href="https://qiskit.org/textbook" onclick="textbook.trackClickEvent('old-textbook-version', 'banner')" target="_blank">aquí</a>
+Name: Nombre
+Next: Siguiente
+Not quite: No exactamente
+Notation: Notación
+Note: Nota
+Nothing here yet: Nada aquí aún
+Overview: Descripción General
+Paste that value in the input below and press "Save".: Pega ese valor en la caja de texto de abajo y presiona "Guardar".
+Play animation: Reproducir animación
+Please read and accept the End User License Agreement to complete your account setup.: Lee y acepta el Acuerdo de Licencia de Usuario Final para completar la configuración de tu cuenta.
+Please review our <a href="$0" target="_blank">Privacy Policy</a> and our <a href="$1" target="_blank">Terms of Service</a>. Make sure you understand what personal data we collect, and how we use that data to personalise and improve our content.: Por favor revisa nuestra <a href="$0" target="_blank">Política de Privacidad</a> y nuestros <a href="$1" target="_blank">Términos de Servicio</a>. Asegúrate de comprender qué datos personales recopilamos y cómo usamos esos datos para personalizar y mejorar nuestro contenido.
+Qiskit is the worlds most popular open source quantum computing toolkit. Get started with a personalized learning experience that tracks your progress.: Qiskit es el conjunto de herramientas de computación cuántica de código abierto más popular del mundo. Comienza con una experiencia de aprendizaje personalizada que realiza un seguimiento de tu progreso.
+Reading time: Tiempo de lectura
+Reset cell to initial content: Restablecer la celda con el contenido inicial
+Reset code block?: ¿Restablecer bloque de código?
+Run: Ejecutar
+Saved: Guardado
+Scratchpad: Bloc de Pruebas
+Select a circuit in the selector above: Selecciona un circuito en el selector de arriba
+Show details: Mostrar detalles
+Show index: Mostrar índice
+Sign in with Gmail: Iniciar sesión con Gmail
+Sign Into Qiskit: Iniciar sesión en Qiskit
+Stop animation: Detener animación
+Syllabus: Plan de Estudios
+That's correct: Eso es correcto
+This is your Python Scratchpad. Use this however you like while you work or copy the code over from the chapter.: Este es tu Bloc de Pruebas de Python. Úsalo como desees mientras trabajas o copia el código del capítulo.
+This page contains privacy information, including the IBM privacy statement, the end user license agreement, and the ability to delete your account. If you would like copy of all of your user account data, please email: Esta página contiene información de privacidad, incluida la declaración de privacidad de IBM, el acuerdo de licencia de usuario final y la posibilidad de eliminar tu cuenta. Si deseas una copia de todos los datos de tu cuenta de usuario, envía un correo electrónico a
+This page shows your classroom activities in the Qiskit Textbook.: Esta página muestra tus actividades de clase en el libro de texto de Qiskit.
+This page shows your progress in the Qiskit Textbook. Checkmarks appear next to section that you have completed.: Esta página muestra tu progreso en el libro de texto de Qiskit. Aparecen marcas de verificación junto a la sección que has completado.
+This will reset the code to the textbook default. Any custom edits will be removed.: Esto restablecerá el código al valor predeterminado del libro de texto. Se eliminarán todas las ediciones personalizadas.
+To configure your API Token you can follow the next steps: Para configurar tu Token de API puedes seguir los siguientes pasos
+Type: Tipo
+Unfortunately we couldn’t log you in with $0. Please try a different method!: Desafortunadamente, no pudimos iniciar sesión con $0. ¡Por favor, prueba con un método diferente!
+Universal frequently used notation: Notación universal de uso frecuente
+universal glossary: glosario universal
+User Account: Cuenta de Uauario
+Vocabulary: Vocabulario
+What it means: Lo que significa
+Write: Escribe
+Your Profile: Tu perfil
