@@ -1,0 +1,9 @@
+---
+ket0:
+  meaning: Vektor ini mewakili status '0' dari qubit
+  say: Ket 0
+  type: Notasi umum
+ket1:
+  meaning: Vektor ini mewakili status '1' dari qubit
+  say: Ket 1
+  type: Notasi umum

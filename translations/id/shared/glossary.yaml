@@ -1,0 +1,10 @@
+---
+sample:
+  text: Ini adalah anotasi untuk contoh istilah glosarium.
+qubit:
+  title: Qubit
+  text: "__qubit__ atau __quantum bit__ adalah unit dasar informasi kuantum.\nIni
+    adalah sistem mekanika kuantum-dua-keadaan, dan salah satu sistem paling sederhana\nmenunjukkan
+    keunikan dari mekanika kuantum.\n\nMekanika kuantum memungkinkan qubit berada
+    dalam superposisi yang koheren dari kedua \nkeadaan secara bersamaan, properti
+    yang menjadi dasar untuk mekanika kuantum\ndan komputasi kuantum."

@@ -1,0 +1,152 @@
+#  === Structure of the Qiskit Textbook ===
+#
+# This textbook is organised into 'courses', which are ordered lists of
+# 'sections'. Sections are the smallest unit of content in this textbook,
+# i.e. a single Jupyter notebook which is converted to a single web page.
+#
+# Below is a fake example of a simple course.
+#
+# - title: My course
+#   url: /my-course   # pages in this course will have urls starting with
+#                     # 'https://learn.qiskit.org/course/my-course'
+#   sections:  # ordered list of notebooks
+#     - title: My page  # Appears at top of page and in left sidebar
+#       id: my-page     # Stem of the url for this page on the website,
+#                       # i.e. this page will have url 'https://learn.qiskit.org/course/my-course/my-page'
+#       uuid: a5a86ddc-b519-11ec-b909-0242ac120002  # Unique ID for
+#                       # website software to identify pages if names change.
+#                       # Generate new ids with https://www.uuidgenerator.net
+#       url: /my-course/my-notebook  # Path to source notebook, relative to this file
+
+
+
+- title: 양자 상태와 큐비트
+  url: /ch-states
+  sections:
+    - title: Introduction
+      - id: introduction
+      uuid: afcc559e-b519-11ec-b909-0242ac120002
+      url: /ch-states/introduction
+    - title: The Atoms of Computation
+      - id: the-atoms-of-computation
+      uuid: b31c20ee-b519-11ec-b909-0242ac120002
+      url: /ch-states/atoms-computation
+    - title: Representing Qubit States
+      - id: representing-qubit-states
+      uuid: b81717ca-b519-11ec-b909-0242ac120002
+      url: /ch-states/representing-qubit-states
+    - title: Single Qubit Gates
+      - id: single-qubit-gates
+      uuid: bd4334a4-b519-11ec-b909-0242ac120002
+      url: /ch-states/single-qubit-gates
+    - title: The Case for Quantum
+      - id: the-case-for-quantum-computers
+      uuid: c0bbff62-b519-11ec-b909-0242ac120002
+      url: /ch-states/case-for-quantum
+
+
+- title: 다중 큐비트와 얽힘
+  url: /ch-gates
+  sections:
+    - title: Multiple Qubits and Entangled States
+      - id: multiple-qubits-and-entangled-states
+      uuid: c7cfe502-b519-11ec-b909-0242ac120002
+      url: /ch-gates/multiple-qubits-entangled-states
+    - title: More Circuit Identities
+      - id: basic-circuit-identities
+      uuid: ce8ce75a-b519-11ec-b909-0242ac120002
+      url: /ch-gates/more-circuit-identities
+
+
+
+- title: 양자 프로토콜들과 알고리듬들
+  url: /ch-algorithms
+  sections:
+    - title: Defining Quantum Circuits
+      - id: quantum-circuits
+      uuid: d90cbfb6-b519-11ec-b909-0242ac120002
+      url: /ch-algorithms/defining-quantum-circuits
+    - title: Deutsch-Jozsa Algorithm
+      - id: deutsch-jozsa-algorithm
+      uuid: dc9d3aa2-b519-11ec-b909-0242ac120002
+      url: /ch-algorithms/deutsch-jozsa
+    - title: Bernstein-Vazirani Algorithm
+      - id: bernstein-vazirani-algorithm
+      uuid: df6e5a40-b519-11ec-b909-0242ac120002
+      url: /ch-algorithms/bernstein-vazirani
+    - title: Quantum Fourier Transform
+      - id: quantum-fourier-transform
+      uuid: e59ba472-b519-11ec-b909-0242ac120002
+      url: /ch-algorithms/quantum-fourier-transform
+    - title: Quantum Phase Estimation
+      - id: quantum-phase-estimation
+      uuid: e8ac9ec8-b519-11ec-b909-0242ac120002
+      url: /ch-algorithms/quantum-phase-estimation
+    - title: Shor's Algorithm
+      - id: shors-algorithm
+      uuid: ec157cd8-b519-11ec-b909-0242ac120002
+      url: /ch-algorithms/shor
+    - title: The Hidden Shift Problem
+      - id: hidden-shift-problem
+      uuid: 56d13a0c-cae7-11ec-9d64-0242ac120002
+      url: /ch-algorithms/hidden-shift-problem
+    - title: Quantum Counting
+      - id: quantum-counting
+      uuid: f1a9942c-b519-11ec-b909-0242ac120002
+      url: /ch-algorithms/quantum-counting
+    - title: Quantum Teleportation
+      - id: quantum-teleportation
+      uuid: f4f4a090-b519-11ec-b909-0242ac120002
+      url: /ch-algorithms/teleportation
+    - title: Superdense Coding
+      - id: superdense-coding
+      uuid: f87cbd42-b519-11ec-b909-0242ac120002
+      url: /ch-algorithms/superdense-coding
+    - title: Quantum Key Distribution
+      - id: quantum-key-distribution
+      uuid: fbafa8c6-b519-11ec-b909-0242ac120002
+      url: /ch-algorithms/quantum-key-distribution
+    - title: Quantum Walk Search Algorithm
+      - id: quantum-walk-search-algorithm
+      uuid: 5083763f-3db8-461f-8e7d-675533924165
+      url: /ch-algorithms/quantum-walk-search-algorithm
+
+
+- title: 양자 알고리듬
+  url: /algorithms
+  type: learning-path
+  sections:
+    - title: Phase Kickback
+      - id: phase-kickback
+      uuid: 976e9da6-6c33-4e2f-b7eb-f9588f700f07
+      url: /algorithms/phase-kickback
+
+
+- title: 양자 컴퓨팅 소개
+  url: /introduction
+  type: learning-path
+  sections:
+    - title: Why quantum computing?
+      uuid: bdb1d662-e0f6-428a-8830-befe6b47f320
+      - id: why-quantum-computing
+      url: /intro/why-quantum-computing
+    - title: What is quantum?
+      - id: what-is-quantum
+      uuid: 7c765036-aebc-11ec-b909-0242ac120002
+      url: /intro/what-is-quantum
+    - title: Describing quantum computers
+      - id: describing-quantum-computers
+      uuid: 9260a554-aebc-11ec-b909-0242ac120002
+      url: /intro/describing-quantum-computers
+    - title: Entangled states
+      id: entangled-states
+      uuid: 98aa9032-aebc-11ec-b909-0242ac120002
+      url: /intro/entangled-states
+    - title: Grovers algorithm
+      - id: grovers-search-algorithm
+      uuid: a2e6f7a2-aebc-11ec-b909-0242ac120002
+      url: /intro/grover-intro
+    - title: Project
+      - id: project
+      uuid: e25c3f90-aebd-11ec-b909-0242ac120002
+      url: /intro/project

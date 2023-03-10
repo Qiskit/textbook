@@ -1,0 +1,65 @@
+---
+ket_psi:
+  notation: "$| \\psi \\rangle$"
+  description: Ini adalah istilah umum untuk keadaan kuantum tertentu, ini banyak
+    digunakan dalam komputasi kuantum untuk mewakili keadaan kuantum yang dibuat oleh
+    manipulasi qubit dalam suatu rangkaian.
+bra:
+  notation: "$\\langle a |$"
+  description: "⟨ and | dalam urutan ini dikenal sebagai 'Bra' dalam Notasi Dirac.
+    | sama dengan transpos konjugat kompleks dari |\U0001D44E⟩, juga dilambangkan
+    sebagai \U0001D44E† (bila \U0001D44E adalah vektor). Bra mengacu pada vektor dengan
+    setiap komponen digantikan oleh konjugat kompleksnya dan kemudian ditransposisikan
+    (yaitu dikonversi dari vektor kolom ke vektor baris)."
+tensor_product:
+  notation: "$ ⊗ $"
+  description: produk tensor. Anda dapat menganggap ini sebagai mengalikan setiap
+    komponen dari satu vektor dengan setiap komponen lainnya.
+sum:
+  notation: "$ \\sum $"
+  description: Ini dibaca sebagai 'jumlah', nilai apa pun yang berasa di atas simbol
+    mewakili nilai maksimum dan nilai apa pun di bagian bawah mewakili nilai minimum.
+magnitude:
+  notation: "$\\| x \\|$"
+  description: 'Magnitudo: ''ukuran'' objek di antara garis vertikal. Untuk vektor,
+    ini adalah akar kuadrat dari jumlah kuadrat setiap elemen.
+
+'
+set_membership:
+  notation: "&isin;"
+  description: Ini adalah simbol 'mengatur keanggotaan'. Ini berarti bahwa apa pun
+    di sebelah kiri simbol 'adalah elemen dari' apa pun yang ada di sebelah kanan.
+proper_subset:
+  notation: "$ \\subseteq $"
+  description: 'Subhimpunan: himpunan di sebelah kiri simbol ini hanya berisi elemen
+    himpunan di sebelah kanan.
+
+'
+subset:
+  notation: "$ \\subset $"
+  description: Ini berarti 'adalah bagian yang tepat dari'. Jadi jika A⊂B, semua anggota
+    A harus menjadi anggota B, tetapi B mungkin juga memiliki anggota yang tidak ada
+    di A.
+hilbert_space:
+  notation: "$ \\mathcal{H} $"
+  description: Ini adalah simbol untuk 'Ruang Hilbert', yang merupakan ruang vektor
+    kompleks di mana semua vektor qubit menyatakan 'hidup', setiap vektor yang mungkin
+    dalam ruang Hilbert dapat direpresentasikan menggunakan kombinasi |0⟩ dan |1⟩.
+real_number:
+  notation: "&Ropf;"
+  description: Bilangan real (berlawanan dengan bilangan imajiner)"
+complex_number:
+  notation: "&Copf;"
+  description: Bilangan kompleks (yaitu bilangan yang terdiri dari bagian real dan
+    imajiner, sering direpresentasikan sebagai a + b i).
+for_all:
+  notation: "$ \\forall $"
+  description: Ini dibaca sebagai 'untuk semua'.
+identity_matrix:
+  notation: "$ I $ or $ ∥ $"
+  description: Bergantung pada ukuran vektor (yaitu jumlah qubit yang terlibat), matriks
+    identitas dengan ukuran yang sesuai dapat digunakan.
+unitary_matrix:
+  notation: "$ U $"
+  description: Matriks kesatuan adalah semua matriks yang jika dikalikan dengan transpos
+    konjugasinya akan menghasilkan matriks Identitas.
