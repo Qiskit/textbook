@@ -24,23 +24,23 @@
   url: /ch-states
   sections:
     - title: Introduction
-      - id: introduction
+      id: introduction
       uuid: afcc559e-b519-11ec-b909-0242ac120002
       url: /ch-states/introduction
     - title: The Atoms of Computation
-      - id: the-atoms-of-computation
+      id: the-atoms-of-computation
       uuid: b31c20ee-b519-11ec-b909-0242ac120002
       url: /ch-states/atoms-computation
     - title: Representing Qubit States
-      - id: representing-qubit-states
+      id: representing-qubit-states
       uuid: b81717ca-b519-11ec-b909-0242ac120002
       url: /ch-states/representing-qubit-states
     - title: Single Qubit Gates
-      - id: single-qubit-gates
+      id: single-qubit-gates
       uuid: bd4334a4-b519-11ec-b909-0242ac120002
       url: /ch-states/single-qubit-gates
     - title: The Case for Quantum
-      - id: the-case-for-quantum-computers
+      id: the-case-for-quantum-computers
       uuid: c0bbff62-b519-11ec-b909-0242ac120002
       url: /ch-states/case-for-quantum
 
@@ -49,11 +49,11 @@
   url: /ch-gates
   sections:
     - title: Multiple Qubits and Entangled States
-      - id: multiple-qubits-and-entangled-states
+      id: multiple-qubits-and-entangled-states
       uuid: c7cfe502-b519-11ec-b909-0242ac120002
       url: /ch-gates/multiple-qubits-entangled-states
     - title: More Circuit Identities
-      - id: basic-circuit-identities
+      id: basic-circuit-identities
       uuid: ce8ce75a-b519-11ec-b909-0242ac120002
       url: /ch-gates/more-circuit-identities
 
@@ -63,51 +63,51 @@
   url: /ch-algorithms
   sections:
     - title: Defining Quantum Circuits
-      - id: quantum-circuits
+      id: quantum-circuits
       uuid: d90cbfb6-b519-11ec-b909-0242ac120002
       url: /ch-algorithms/defining-quantum-circuits
     - title: Deutsch-Jozsa Algorithm
-      - id: deutsch-jozsa-algorithm
+      id: deutsch-jozsa-algorithm
       uuid: dc9d3aa2-b519-11ec-b909-0242ac120002
       url: /ch-algorithms/deutsch-jozsa
     - title: Bernstein-Vazirani Algorithm
-      - id: bernstein-vazirani-algorithm
+      id: bernstein-vazirani-algorithm
       uuid: df6e5a40-b519-11ec-b909-0242ac120002
       url: /ch-algorithms/bernstein-vazirani
     - title: Quantum Fourier Transform
-      - id: quantum-fourier-transform
+      id: quantum-fourier-transform
       uuid: e59ba472-b519-11ec-b909-0242ac120002
       url: /ch-algorithms/quantum-fourier-transform
     - title: Quantum Phase Estimation
-      - id: quantum-phase-estimation
+      id: quantum-phase-estimation
       uuid: e8ac9ec8-b519-11ec-b909-0242ac120002
       url: /ch-algorithms/quantum-phase-estimation
     - title: Shor's Algorithm
-      - id: shors-algorithm
+      id: shors-algorithm
       uuid: ec157cd8-b519-11ec-b909-0242ac120002
       url: /ch-algorithms/shor
     - title: The Hidden Shift Problem
-      - id: hidden-shift-problem
+      id: hidden-shift-problem
       uuid: 56d13a0c-cae7-11ec-9d64-0242ac120002
       url: /ch-algorithms/hidden-shift-problem
     - title: Quantum Counting
-      - id: quantum-counting
+      id: quantum-counting
       uuid: f1a9942c-b519-11ec-b909-0242ac120002
       url: /ch-algorithms/quantum-counting
     - title: Quantum Teleportation
-      - id: quantum-teleportation
+      id: quantum-teleportation
       uuid: f4f4a090-b519-11ec-b909-0242ac120002
       url: /ch-algorithms/teleportation
     - title: Superdense Coding
-      - id: superdense-coding
+      id: superdense-coding
       uuid: f87cbd42-b519-11ec-b909-0242ac120002
       url: /ch-algorithms/superdense-coding
     - title: Quantum Key Distribution
-      - id: quantum-key-distribution
+      id: quantum-key-distribution
       uuid: fbafa8c6-b519-11ec-b909-0242ac120002
       url: /ch-algorithms/quantum-key-distribution
     - title: Quantum Walk Search Algorithm
-      - id: quantum-walk-search-algorithm
+      id: quantum-walk-search-algorithm
       uuid: 5083763f-3db8-461f-8e7d-675533924165
       url: /ch-algorithms/quantum-walk-search-algorithm
 
@@ -117,7 +117,7 @@
   type: learning-path
   sections:
     - title: Phase Kickback
-      - id: phase-kickback
+      id: phase-kickback
       uuid: 976e9da6-6c33-4e2f-b7eb-f9588f700f07
       url: /algorithms/phase-kickback
 
@@ -128,14 +128,14 @@
   sections:
     - title: Why quantum computing?
       uuid: bdb1d662-e0f6-428a-8830-befe6b47f320
-      - id: why-quantum-computing
+      id: why-quantum-computing
       url: /intro/why-quantum-computing
     - title: What is quantum?
-      - id: what-is-quantum
+      id: what-is-quantum
       uuid: 7c765036-aebc-11ec-b909-0242ac120002
       url: /intro/what-is-quantum
     - title: Describing quantum computers
-      - id: describing-quantum-computers
+      id: describing-quantum-computers
       uuid: 9260a554-aebc-11ec-b909-0242ac120002
       url: /intro/describing-quantum-computers
     - title: Entangled states
@@ -143,10 +143,10 @@
       uuid: 98aa9032-aebc-11ec-b909-0242ac120002
       url: /intro/entangled-states
     - title: Grovers algorithm
-      - id: grovers-search-algorithm
+      id: grovers-search-algorithm
       uuid: a2e6f7a2-aebc-11ec-b909-0242ac120002
       url: /intro/grover-intro
     - title: Project
-      - id: project
+      id: project
       uuid: e25c3f90-aebd-11ec-b909-0242ac120002
       url: /intro/project
