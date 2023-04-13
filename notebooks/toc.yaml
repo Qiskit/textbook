@@ -105,22 +105,22 @@
     - title: Single systems
       id: single-systems
       uuid: dd5680be-7490-401e-9e68-c1ec7d0f5d61
-      url: /basics/single-systems
+      url: /basics/01.single-systems/index
       previewImgUrl: /basics/overview/single-systems.png
     - title: Multiple systems
       id: multiple-systems
       uuid: 327b128f-4fec-410a-a3f9-079939002bf2
-      url: /basics/multiple-systems
+      url: /basics/02.multiple-systems/index
       previewImgUrl: /basics/overview/multiple-systems.png
     - title: Quantum circuits
       id: quantum-circuits
       uuid: 57d5452e-85cd-40f8-a290-11466213c1a6
-      url: basics/quantum-circuits
+      url: basics/03.quantum-circuits/index
       previewImgUrl: /basics/overview/quantum-circuits.png
     - title: Entanglement in action
       id: entanglement-in-action
       uuid: 366f7150-4c04-4763-8269-ae6180812b73
-      url: basics/entanglement-in-action
+      url: basics/04.entanglement-in-action/index
       previewImgUrl: /basics/overview/entanglement-in-action.png
 
 - title: Introduction to Quantum Computing
@@ -157,42 +157,42 @@
     - title: Why quantum computing?
       uuid: bdb1d662-e0f6-428a-8830-befe6b47f320
       id: why-quantum-computing
-      url: /intro/why-quantum-computing
+      url: /intro/01.why-quantum-computing/index
       previewImgUrl: /intro/overview/why-quantum-computing.png
     - title: The atoms of computation
       id: the-atoms-of-computation
       uuid: 37ef477e-ab8d-11ec-b909-0242ac120002
-      url: /intro/atoms-of-computation
+      url: /intro/02.atoms-of-computation/index
       previewImgUrl: /intro/overview/atoms-of-computation.png
     - title: What is quantum?
       id: what-is-quantum
       uuid: 7c765036-aebc-11ec-b909-0242ac120002
-      url: /intro/what-is-quantum
+      url: /intro/03.what-is-quantum/index
       previewImgUrl: /intro/overview/what-is-quantum.png
     - title: Describing quantum computers
       id: describing-quantum-computers
       uuid: 9260a554-aebc-11ec-b909-0242ac120002
-      url: /intro/describing-quantum-computers
+      url: /intro/04.describing-quantum-computers/index
       previewImgUrl: /intro/overview/describing-quantum-computers.png
     - title: Entangled states
       id: entangled-states
       uuid: 98aa9032-aebc-11ec-b909-0242ac120002
-      url: /intro/entangled-states
+      url: /intro/05.entangled-states/index
       previewImgUrl: /intro/overview/entangled-states.png
     - title: Visualizing entanglement
       id: visualizing-entanglement
       uuid: 9e8ceb9e-aebc-11ec-b909-0242ac120002
-      url: /intro/visualizing-entanglement
+      url: /intro/06.visualizing-entanglement/index
       previewImgUrl: /intro/overview/visualizing-entanglement.png
     - title: Grovers algorithm
       id: grovers-search-algorithm
       uuid: a2e6f7a2-aebc-11ec-b909-0242ac120002
-      url: /intro/grover-intro
+      url: /intro/07.grover-intro/index
       previewImgUrl: /intro/overview/grover-intro.png
     - title: Project
       id: project
       uuid: e25c3f90-aebd-11ec-b909-0242ac120002
-      url: /intro/project
+      url: /intro/08.project/index
       previewImgUrl: /intro/overview/project.png
 
 - title: Quantum Machine Learning
@@ -225,52 +225,52 @@
     - title: Introduction
       id: introduction
       uuid: 16e935fc-b51b-11ec-b909-0242ac120002
-      url: /quantum-machine-learning/introduction
+      url: /quantum-machine-learning/01.introduction/index
       previewImgUrl: /quantum-machine-learning/overview/introduction.png
     - title: Parametrized quantum circuits
       id: parameterized-quantum-circuits
       uuid: 19a9f4de-b51b-11ec-b909-0242ac120002
-      url: /quantum-machine-learning/pqc
+      url: /quantum-machine-learning/02.pqc/index
       previewImgUrl: /quantum-machine-learning/overview/pqc.png
     - title: Data encoding
       id: data-encoding
       uuid: 1d09af66-b51b-11ec-b909-0242ac120002
-      url: /quantum-machine-learning/encoding
+      url: /quantum-machine-learning/03.encoding/index
       previewImgUrl: /quantum-machine-learning/overview/encoding.png
     - title: Training quantum circuits
       id: training-quantum-circuits
       uuid: 1fb38444-b51b-11ec-b909-0242ac120002
-      url: /quantum-machine-learning/training
+      url: /quantum-machine-learning/04.training/index
       previewImgUrl: /quantum-machine-learning/overview/training.png
     - title: Supervised learning
       id: supervised-learning
       uuid: 22cf51bc-b51b-11ec-b909-0242ac120002
-      url: /quantum-machine-learning/supervised
+      url: /quantum-machine-learning/05.supervised/index
       previewImgUrl: /quantum-machine-learning/overview/supervised.png
     - title: Variational classification
       id: variational-classification
       uuid: 26951034-b51b-11ec-b909-0242ac120002
-      url: /quantum-machine-learning/vqc
+      url: /quantum-machine-learning/06.vqc/index
       previewImgUrl: /quantum-machine-learning/overview/vqc.png
     - title: Quantum feature maps and kernels
       id: quantum-feature-maps-kernels
       uuid: 29b0fda0-b51b-11ec-b909-0242ac120002
-      url: /quantum-machine-learning/kernel
+      url: /quantum-machine-learning/07.kernel/index
       previewImgUrl: /quantum-machine-learning/overview/kernel.png
     - title: Unsupervised learning
       id: unsupervised-learning
       uuid: 2cc6b386-b51b-11ec-b909-0242ac120002
-      url: /quantum-machine-learning/unsupervised
+      url: /quantum-machine-learning/08.unsupervised/index
       previewImgUrl: /quantum-machine-learning/overview/unsupervised.png
     - title: Quantum generative adversarial networks
       id: quantum-generative-adversarial-networks
       uuid: 2ff2a3e4-b51b-11ec-b909-0242ac120002
-      url: /quantum-machine-learning/qgan
+      url: /quantum-machine-learning/09.qgan/index
       previewImgUrl: /quantum-machine-learning/overview/qgan.png
     - title: Project
       id: project
       uuid: 345f0c2e-b51b-11ec-b909-0242ac120002
-      url: /quantum-machine-learning/project
+      url: /quantum-machine-learning/10.project/index
       previewImgUrl: /quantum-machine-learning/overview/project.png
 
 - id: quantum-hardware
@@ -290,27 +290,27 @@
   - id: error-correction-repetition-code
     previewImgUrl: /quantum-hardware/overview/error-correction-repetition-code.png
     title: Introduction to quantum error correction using repetition codes
-    url: /quantum-hardware/error-correction-repetition-code
+    url: /quantum-hardware/01.error-correction-repetition-code/index
     uuid: 20e45231-2ac8-4e3c-b695-af8121ff84bf
   - id: measurement-error-mitigation
     previewImgUrl: /quantum-hardware/overview/measurement-error-mitigation.png
     title: Measurement error mitigation
-    url: /quantum-hardware/measurement-error-mitigation
+    url: /quantum-hardware/02.measurement-error-mitigation/index
     uuid: ebce5629-1f24-49ec-85dd-75a8946ee867
   - id: randomized-benchmarking
     previewImgUrl: /quantum-hardware/overview/randomized-benchmarking.png
     title: Randomized benchmarking
-    url: /quantum-hardware/randomized-benchmarking
+    url: /quantum-hardware/03.randomized-benchmarking/index
     uuid: f55fa9e5-76a2-4404-a7cf-2bed19296e8d
   - id: measuring-quantum-volume
     previewImgUrl: /quantum-hardware/overview/measuring-quantum-volume.png
     title: Measuring quantum volume
-    url: /quantum-hardware/measuring-quantum-volume
+    url: /quantum-hardware/04.measuring-quantum-volume/index
     uuid: 4464a972-1a00-4837-93fb-6dad869915bb
   - id: density-matrix
     previewImgUrl: /quantum-hardware/overview/density-matrix.png
     title: The density matrix and mixed states
-    url: /quantum-hardware/density-matrix
+    url: /quantum-hardware/05.density-matrix/index
     uuid: 9f785388-6fab-4c13-b323-4d98cf215c03
   title: Investigating quantum hardware using quantum circuits
   type: chapter
