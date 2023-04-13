@@ -338,35 +338,35 @@
     - title: Calibrating qubits with Qiskit Pulse
       id: calibrating-qubits-using-qiskit-pulse
       uuid: 292100ca-b51a-11ec-b909-0242ac120002
-      url: /quantum-hardware-pulses/calibrating-qubits-pulse
+      url: /quantum-hardware-pulses/01.calibrating-qubits-pulse/index
       previewImgUrl: /quantum-hardware-pulses/overview/calibrating-qubits-pulse.png
     - title: Accessing higher energy states
       id: accessing-higher-energy-states-with-qiskit-pulse
       uuid: 2bf0d316-b51a-11ec-b909-0242ac120002
-      url: /quantum-hardware-pulses/accessing_higher_energy_states
+      url: /quantum-hardware-pulses/02.accessing_higher_energy_states/index
       previewImgUrl: /quantum-hardware-pulses/overview/accessing_higher_energy_states.png
     - title: Introduction to transmon physics
       id: introduction-to-transmon-physics
       uuid: 2e944e0e-b51a-11ec-b909-0242ac120002
-      url: /quantum-hardware-pulses/transmon-physics
+      url: /quantum-hardware-pulses/03.transmon-physics/index
       previewImgUrl: /quantum-hardware-pulses/overview/transmon-physics.png
     - title: Circuit quantum electrodynamics
       id: circuit-quantum-electrodynamics
       uuid: 31b2ccdc-b51a-11ec-b909-0242ac120002
-      url: /quantum-hardware-pulses/cQED-JC-SW
+      url: /quantum-hardware-pulses/04.cQED-JC-SW/index
       previewImgUrl: /quantum-hardware-pulses/overview/cQED-JC-SW.png
     - title: Exploring the Jaynes-Cummings Hamiltonian with Qiskit Pulse
       id: exploring-the-jaynes-cummings-hamiltonian-with-qiskit-pulse
       uuid: 346d7eea-b51a-11ec-b909-0242ac120002
-      url: /quantum-hardware-pulses/Jaynes-Cummings-model
+      url: /quantum-hardware-pulses/05.Jaynes-Cummings-model/index
       previewImgUrl: /quantum-hardware-pulses/overview/Jaynes-Cummings-model.png
     - title: Measuring the qubit ac-Stark shift 
       id: measuring-the-qubit-ac-stark-shift
       uuid: 37110d92-b51a-11ec-b909-0242ac120002
-      url: /quantum-hardware-pulses/ac-Stark-shift
+      url: /quantum-hardware-pulses/06.ac-Stark-shift/index
       previewImgUrl: /quantum-hardware-pulses/overview/ac-Stark-shift.png
     - title: Hamiltonian tomography
       id: hamiltonian-tomography
       uuid: 3a440960-b51a-11ec-b909-0242ac120002
-      url: /quantum-hardware-pulses/hamiltonian-tomography
+      url: /quantum-hardware-pulses/07.hamiltonian-tomography/index
       previewImgUrl: /quantum-hardware-pulses/overview/hamiltonian-tomography.png
