@@ -1,0 +1,28 @@
+extends: capitalization
+message: "'%s' should use sentence-style capitalization."
+link: 'https://www.ibm.com/developerworks/library/styleguidelines/index.html#N1030C'
+level: warning
+scope: heading
+match: $sentence
+indicators:
+  - ':'
+  - '.'
+  - ')'
+exceptions:
+  - API
+  - App ID
+  - IBM
+  - IBM Quantum
+  - Qiskit
+  - Runtime
+  - Sampler
+  - Estimator
+  - Terraform
+  - Trotter
+  - Grover
+  - Hamiltonian
+  - Hamiltonians
+  - Cloud
+  - Spectroscopic Eigensolver Algorithm
+  - Variational Quantum Eigensolver
+  - (\d+)\. 

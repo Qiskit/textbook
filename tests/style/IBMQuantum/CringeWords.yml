@@ -1,0 +1,20 @@
+extends: existence
+message: "Don't use '%s'"
+link: 'https://github.com/IBM/ibm-quantum-style-guide/issues/22'
+ignorecase: true
+scope: sentence
+level: warning
+tokens:
+  - allows you to
+  - easy
+  - enable
+  - enables
+  - end user
+  - end users
+  - in the future
+  - that's all there is to it
+  - very
+  - we encourage you
+  - we understand that
+  - you can see
+  - you can think of this

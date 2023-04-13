@@ -24,7 +24,8 @@ def check_resource(resource):
 
 def check_page(page):
     check_exists(page['url'] + '.ipynb')
-    check_exists(page['previewImgUrl'])
+    if page.get('previewImgUrl') is not None:
+        check_exists(page['previewImgUrl'])
 
 def check_course(course):
     assert course['type'] in ['chapter', 'course', 'summer-school']

@@ -1,6 +1,0 @@
-extends: existence
-message: "Remove 'why' in '...reason why...'."
-ignorecase: true
-level: warning
-tokens:
-  - "reason why"

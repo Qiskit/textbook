@@ -1,0 +1,16 @@
+extends: existence
+message: Link names should make sense without context; change "%s" to something more descriptive.
+level: suggestion
+code: false
+scope: link
+ignorecase: true
+tokens:
+    - click here
+    - here
+    - link
+    - more
+    - more information
+    - page
+    - read more
+    - this link
+    - this page
