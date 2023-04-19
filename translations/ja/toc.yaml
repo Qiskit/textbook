@@ -4,10 +4,13 @@
     - id: single-systems
       uuid: dd5680be-7490-401e-9e68-c1ec7d0f5d61
       url: /basics/single-systems
+    - id: multiple-systems
+      uuid: 327b128f-4fec-410a-a3f9-079939002bf2
+      url: basics/multiple-systems
     - id: quantum-circuits
       uuid: 57d5452e-85cd-40f8-a290-11466213c1a6
       url: basics/quantum-circuits
-    - id: entanglement-action
+    - id: entanglement-in-action
       uuid: 366f7150-4c04-4763-8269-ae6180812b73
       url: basics/entanglement-in-action
 
@@ -280,7 +283,6 @@
     - id: project
       uuid: e25c3f90-aebd-11ec-b909-0242ac120002
       url: /intro/project
-
 
 - title: 量子機械学習
   url: /machine-learning
