@@ -26,7 +26,8 @@ jobs:
       - name: Set up Python environment
         run: |
           ./install.sh
-          source .venv/bin/activate
+          . .venv/bin/activate
+          echo $PATH >> $GITHUB_PATH
 
       - name: Get changed notebooks
         id: changed-notebooks
