@@ -28,6 +28,9 @@ jobs:
           ./install.sh
           . .venv/bin/activate
           echo $PATH >> $GITHUB_PATH
+          echo "IPYTHONDIR=$(pwd)/environment/ipython" >> $GITHUB_ENV
+          echo "QISKIT_SETTINGS=$(pwd)/environment/qiskit/settings.conf" >> $GITHUB_ENV
+
 
       - name: Get changed notebooks
         id: changed-notebooks
