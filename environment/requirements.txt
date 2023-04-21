@@ -8,8 +8,9 @@ cmake==3.24.1
 nbqa==1.3.1
 pylint==2.14.3
 scour==0.38.2
-qiskit==0.37.2
-qiskit-nature==0.4.1
+qiskit==0.42.1
+qiskit-ibm-runtime==0.9.3
+qiskit-nature==0.6.0
 qiskit-machine-learning==0.4.0
 qiskit-finance==0.3.2
 scikit-learn==1.0.1
@@ -20,6 +21,7 @@ pylatexenc==2.10
 ipywidgets==8.0.1
 qiskit-machine-learning[sparse]
 qiskit-experiments==0.4.0
+tweedledum==1.1.1
 git+https://github.com/qiskit-community/qiskit-textbook.git#subdirectory=qiskit-textbook-src
 git+https://github.com/anedumla/quantum_linear_solvers
 git+https://github.com/NCCR-SPIN/topological_codes.git
