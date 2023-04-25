@@ -18,13 +18,13 @@ source .venv/bin/activate
 ```
 
 then
+
 ```sh
 python -m jupyter notebook
 ```
 
 For a more detailed guide, please check out the
 [contributing document](./CONTRIBUTING.md).
-
 
 ## Versioning
 
@@ -42,13 +42,13 @@ For a verision number `MAJOR.MINOR.PATCH`, we will increment the:
 - `MAJOR` version when changes remove or replace content,
 - `MINOR` version for changes that add content, or that do not significantly
   alter the structure of existing pages. Examples include
-    - adding new pages,
-    - rewording paragraphs for clarity, and
-    - small changes to code to make it work with newer Qiskit versions.
+  - adding new pages,
+  - rewording paragraphs for clarity, and
+  - small changes to code to make it work with newer Qiskit versions.
 - `PATCH` version increments are for 'bugfixes' only. Examples include fixing
-    - typos,
-    - statements that are incorrect, and
-    - code that does not work correctly with the version of Qiskit advertised
+  - typos,
+  - statements that are incorrect, and
+  - code that does not work correctly with the version of Qiskit advertised
       on the page.
 
 For example, if you're teaching using `v1.0.3`, you know you can switch to any
