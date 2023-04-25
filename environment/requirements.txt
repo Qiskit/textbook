@@ -14,7 +14,9 @@ qiskit-nature==0.6.0
 qiskit-machine-learning==0.4.0
 qiskit-finance==0.3.2
 scikit-learn==1.0.1
-tensorflow==2.9.1
+tensorflow==2.9.1 ; sys_platform != 'darwin'
+tensorflow-macos ; sys_platform == 'darwin'
+metal; sys_platform == 'darwin'
 matplotlib==3.5.2
 pyscf==2.0.1
 pylatexenc==2.10
