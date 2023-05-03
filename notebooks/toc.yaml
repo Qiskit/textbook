@@ -383,4 +383,7 @@
       long: |
         TBD
   sections:
-
+    - title: The CHSH game
+      id: chsh-game
+      uuid: 625167df-49f5-4b7e-a94f-5fd5ced79943
+      url: /compendium/01.chsh/index
