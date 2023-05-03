@@ -370,3 +370,17 @@
       uuid: 3a440960-b51a-11ec-b909-0242ac120002
       url: /quantum-hardware-pulses/07.hamiltonian-tomography/index
       previewImgUrl: /quantum-hardware-pulses/overview/hamiltonian-tomography.png
+
+- title: Compendium
+  id: compendium
+  url: /compendium
+  type: chapter
+  overviewInfo:
+    thumbnailUrl: /compendium/overview/header.png
+    description:
+      short: |
+        TBD
+      long: |
+        TBD
+  sections:
+
