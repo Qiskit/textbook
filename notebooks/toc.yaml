@@ -383,4 +383,7 @@
       long: |
         TBD
   sections:
-
+    - title: Grover's algorithm
+      id: grover
+      uuid: d7ceca41-2b0a-4f77-a50e-da1994586a2a
+      url: /compendium/02.grover/index
