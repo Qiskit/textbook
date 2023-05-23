@@ -1,10 +1,7 @@
-ch-applications/vqe-molecules
-ch-applications/qaoa
+quantum-hardware/04.measuring-quantum-volume/index
 
-quantum-hardware/measuring-quantum-volume
-
-intro/why-quantum-computing
-intro/atoms-of-computation
-intro/entangled-states
+intro/01.why-quantum-computing/index
+intro/02.atoms-of-computation/index
+intro/05.entangled-states/index
 #intro/visualizing-entanglement
-intro/grover-intro
+intro/07.grover-intro/index
