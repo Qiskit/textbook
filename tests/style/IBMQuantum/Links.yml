@@ -1,7 +1,6 @@
 extends: existence
 message: Link names should make sense without context; change "%s" to something more descriptive.
 level: suggestion
-code: false
 scope: link
 ignorecase: true
 tokens:
