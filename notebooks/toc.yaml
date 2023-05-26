@@ -383,4 +383,7 @@
       long: |
         TBD
   sections:
-
+    - title: Quantum teleportation
+      id: teleportation
+      uuid: c5a31d0c-ce7f-46db-96da-d78c498ac30e
+      url: /compendium/teleportation/index
