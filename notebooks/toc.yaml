@@ -383,4 +383,7 @@
       long: |
         TBD
   sections:
-
+    - title: Deutsch's algorithm
+      id: deutsch
+      uuid: b858366d-9eb8-48f7-bce7-a23b9f85f130
+      url: /compendium/deutsch/index
