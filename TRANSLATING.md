@@ -88,6 +88,6 @@ During the process of translating Qiskit Textbook (beta), you may identify bug o
 
 | **Language** | **Translation Leads** | **Slack ([Qiskit Workspace](https://qisk.it/join-slack))** |
 | ---     | ---    | --- |
-|  Portuguese (PT_UN)| Omar Costa Hamido | omarcostahamido | 
+|  Portuguese (PT_UN)| Omar Costa Hamido | @OCH | 
 | Spanish (ES_UN)| Claudia Zendejas-Morales, Rodrigo Rosado Rivial | @clausia @rodrigo rosado |
 | Korean (KR_UN)| Woohyun Ahn, Soyoung Shin | @Woohyun Ahn, @sophy |
