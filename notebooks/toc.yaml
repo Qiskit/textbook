@@ -123,6 +123,23 @@
       url: basics/04.entanglement-in-action/index
       previewImgUrl: /basics/overview/entanglement-in-action.png
 
+- title: Algorithm fundamentals
+  type: course
+  id: basics-quantum-information
+  url: /algorithm-fundamentals
+  overviewInfo:
+    description:
+      short: |
+        TBD
+      long: |
+        TBD
+  sections:
+    - title: Quantum query algorithms
+      id: quantum-query-algorithms
+      uuid: dd5680be-7490-401e-9e68-c1ec7d0f5d61
+      url: /algorithm-fundamentals/01.query-algorithms/quantum-query-algorithms
+
+
 - title: Introduction to Quantum Computing
   id: introduction-course
   url: /introduction
