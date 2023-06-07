@@ -17,6 +17,7 @@ scikit-learn==1.0.1
 tensorflow==2.9.1
 matplotlib==3.5.2
 pyscf==2.0.1
+galois==0.3.5
 pylatexenc==2.10
 ipywidgets==8.0.1
 qiskit-machine-learning[sparse]
