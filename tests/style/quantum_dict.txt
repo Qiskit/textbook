@@ -25,6 +25,8 @@ Colbeck
 Corcoles
 Courville
 Derks
+Deutsch
+Deutsch's
 Deutschle
 Dewes
 Dunjko
@@ -84,6 +86,7 @@ Osodo
 Ozair
 Peruzzo
 Petar
+Petri
 Petruccione
 Pichlmeier
 Plesch
@@ -96,6 +99,8 @@ Shadbolt
 Shen
 Shende
 Shewchuk
+Shor
+Shor's
 Smelyanskiy
 Srinivasan
 Stamatopoulos
@@ -113,6 +118,7 @@ Trotterization
 Trotterize
 Trotterizing
 Vadim
+Vazirani
 Vedran
 Ville
 Vion
@@ -122,6 +128,8 @@ Volkoff
 Weedbrook
 Wierichs
 Woerner
+XORed
+XORs
 Youngseok
 Yunchao
 Yung
@@ -133,6 +141,7 @@ ansatzes
 autoencoder
 autoencoders
 bitstring
+bitwise
 doi
 eigenbasis
 eigensolver
@@ -140,6 +149,7 @@ eigensolvers
 eigenstate
 endian
 exponentials
+exponentiating
 expressibility
 fermionic
 fidelities
@@ -152,6 +162,7 @@ misclassifying
 nucleobase
 parameterization
 polynomially
+preimage
 preprint
 priori
 pseudocode
