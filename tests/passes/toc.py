@@ -24,7 +24,8 @@ def check_resource(resource):
 
 def check_page(page):
     check_exists(page['url'] + '.ipynb')
-    check_exists(page['previewImgUrl'])
+    if page.get('previewImgUrl') is not None:
+        check_exists(page['previewImgUrl'])
 
 def check_course(course):
     assert course['type'] in ['chapter', 'course', 'summer-school']
@@ -37,8 +38,9 @@ def check_course(course):
                        'prerequisites',
                        'externalRecommendedReadings',
                        'externalRecommendedReadingsPreamble']
-    for page in course['sections']:
-        check_page(page)
+    if course.get('sections') is not None:
+        for page in course['sections']:
+                check_page(page)
     if 'externalRecommendedReadings' in overview:
         for resource in overview['externalRecommendedReadings']:
             check_resource(resource)
@@ -55,10 +57,11 @@ if __name__ == '__main__':
 
     referenced_notebooks = []
     for course in toc:
-        for section in course['sections']:
-            referenced_notebooks.append(
-                Path(f"notebooks/{section['url']}.ipynb")
-            )
+        if course.get('sections') is not None:
+            for section in course['sections']:
+                referenced_notebooks.append(
+                    Path(f"notebooks/{section['url']}.ipynb")
+                )
     for notebook in Path('notebooks').rglob('*.ipynb'):
         if notebook not in referenced_notebooks:
             if notebook.stem.startswith('_'):
