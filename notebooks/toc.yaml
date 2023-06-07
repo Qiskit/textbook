@@ -123,6 +123,54 @@
       url: basics/entanglement-in-action
       previewImgUrl: /basics/overview/entanglement-in-action.png
 
+- title: Fundamentals of quantum algorithms
+  subtitle: "Unit 2: Fundamentals of quantum algorithms"
+  type: course
+  id: fundamentals-quantum-algorithms
+  url: /algorithms
+  overviewInfo:
+    thumbnailUrl: /algorithms/overview/hero.png
+    description:
+      short: |
+        Discover how we can use quantum systems to solve problems more
+        efficiently, including problems with real-world applications such as
+        searching and factoring.
+      long: |
+        This is the second unit of the "Understanding quantum information and
+        computation" series, which explains quantum information and computation at a
+        detailed mathematical level.
+        This unit, "Fundamentals of quantum algorithms", explores computational
+        advantages of quantum information, including what we can do with quantum
+        computers and their advantages over classical computers. The unit begins
+        with quantum query algorithms, which offer simple proof of concept
+        demonstrations for quantum algorithms, and then moves on to quantum
+        algorithms for problems including integer factorization and searching, which
+        are more representative of the types of computational problems that might be
+        encountered in real-world scenarios.
+    externalRecommendedReadingsPreamble: |
+      Alongside this course, you may find these resources helpful or interesting.
+    externalRecommendedReadings:
+      - title: Quantum Computation and Quantum Information (Chapters 4-6)
+        author: Michael Nielsen, Isaac Chuang,
+        link: https://www.cambridge.org/highereducation/books/quantum-computation-and-quantum-information/01E10196D0A682A6AEFFEA52D53BE9AE#overview
+      - title: An Introduction to Quantum Computing (Chapters 5-8)
+        author: Phillip Kaye, Raymond Laflamme, Michele Mosca,
+        link: https://global.oup.com/academic/product/an-introduction-to-quantum-computing-9780198570493?cc=gb&lang=en&
+      - title: Quantum Information Processing — Quantum Algorithms I
+        author: Richard Cleve,
+        link: http://cleve.iqc.uwaterloo.ca/resources/QIC-710-F21/Qic710QuantumAlgorithmsPart1.pdf
+      - title: Quantum Information Processing — Quantum Algorithms II
+        author: Richard Cleve,
+        link: http://cleve.iqc.uwaterloo.ca/resources/QIC-710-F21/Qic710QuantumAlgorithmsPart2.pdf
+      - title: Quantum Information Processing — Quantum Algorithms III
+        author: Richard Cleve,
+        link: http://cleve.iqc.uwaterloo.ca/resources/QIC-710-F21/Qic710QuantumAlgorithmsPart3.pdf
+  sections:
+    - title: Quantum query algorithms
+      id: query-algorithms
+      uuid: f236ed68-91f2-470a-8152-29f09e60a30c
+      url: /algorithms/quantum-query-algorithms
+
 - title: Introduction to Quantum Computing
   id: introduction-course
   url: /introduction
