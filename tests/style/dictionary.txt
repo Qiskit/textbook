@@ -232,6 +232,8 @@ substrings
 sudoku
 summand
 summands
+teleported
+teleports
 tooltip
 tooltips
 transmon

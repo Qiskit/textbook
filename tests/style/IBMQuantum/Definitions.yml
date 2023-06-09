@@ -11,8 +11,8 @@ exceptions:
   - API
   - ASP
   - CLI
-  - CPU
   - CNOT
+  - CPU
   - CSS
   - CSV
   - DEBUG
@@ -37,6 +37,7 @@ exceptions:
   - LLDB
   - NBQA
   - NET
+  - NOT
   - NOTE
   - NVDA
   - OSS
