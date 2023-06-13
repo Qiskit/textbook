@@ -203,6 +203,8 @@ minimax
 misclassifying
 multilinear
 namespace
+nonlocal
+nonlocality
 nucleobase
 orthogonalization
 orthonormality
@@ -244,3 +246,4 @@ transpiling
 tridiagonal
 trits
 unitaries
+untrusted
