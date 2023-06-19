@@ -204,6 +204,7 @@ minimax
 misclassifying
 multilinear
 namespace
+nonlinearly
 nonlocal
 nonlocality
 nucleobase

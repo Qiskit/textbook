@@ -1,0 +1,5 @@
+extends: existence
+message: "Remove the hyphen in '%s'."
+level: suggestion
+tokens:
+  - 'non-(\w+)'
