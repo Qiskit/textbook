@@ -23,11 +23,12 @@ python -m jupyter notebook
 ```
 
 Windows Users can quickly set up by using the following steps.
+
 1st. you need a compiler to run bash commands. You can use the Git Bash for this purpose.
 2nd. The following steps are tested for Python 3.11,3.10,3.9, and 3.8. Installation was successful for any python version except the Python 3.11.
 
 ```sh
-bash install-win.sh
+bash install.sh
 source .venv/Scripts/activate
 ```
 
