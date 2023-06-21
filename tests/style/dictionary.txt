@@ -159,6 +159,7 @@ Weedbrook
 Wierichs
 Woerner
 Wootton
+XORs
 Youngseok
 Yousef
 Yunchao
@@ -233,6 +234,7 @@ sudoku
 summand
 summands
 teleported
+teleporting
 teleports
 tooltip
 tooltips
