@@ -25,7 +25,7 @@ python -m jupyter notebook
 Windows users should use [Git Bash](https://gitforwindows.org/) and Python version > 3.8 and < 3.11.
 
 ```sh
-bash install-win.sh
+bash install.sh
 source .venv/Scripts/activate
 ```
 
