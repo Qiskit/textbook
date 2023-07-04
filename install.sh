@@ -5,8 +5,6 @@ set -e
 # Get the operating system name
 os_name=$(uname -o)
 
-#print os_name
-
 echo "Setting up Python virtual environment in ./.venv"
 python3.8 -m venv ./.venv
 if [[ "$os_name" == "Cygwin" || "$os_name" == "Msys" ]]; then
