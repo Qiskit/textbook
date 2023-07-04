@@ -1,5 +1,11 @@
 # Qiskit Textbook content
 
+> :warning: Unfortunately we're not accepting new pages to the textbook. If you
+> have something you want to share with the community, we highly recommend you
+> self-publish. If you need help with self-publishing, or want feedback on your
+> work, contact Frank Harkins on the
+> [Qiskit Slack workspace](https://qisk.it/join-slack).
+
 This is the repository for the Qiskit Textbook's content. This page is for
 people that want to report issues, or contribute to the Textbook, if you just
 want to read about quantum computing, go to [the textbook
