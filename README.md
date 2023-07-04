@@ -1,6 +1,6 @@
 # Qiskit Textbook content
 
-> :warning: Unfortunately we're not accepting new pages to the textbook. If you
+> :warning: Unfortunately **we can't accept new pages to the textbook**. If you
 > have something you want to share with the community, we highly recommend you
 > self-publish. If you need help with self-publishing, or want feedback on your
 > work, contact Frank Harkins on the
