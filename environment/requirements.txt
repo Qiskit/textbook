@@ -1,3 +1,5 @@
+--prefer-binary 
+
 notebook
 ipython>=6
 nbformat>=4
@@ -15,6 +17,8 @@ qiskit-machine-learning==0.4.0
 qiskit-finance==0.3.2
 scikit-learn==1.0.1
 tensorflow==2.9.1
+torch==2.0.1
+torchvision==0.15.2
 matplotlib==3.5.2
 pyscf==2.0.1
 galois==0.3.5

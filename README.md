@@ -22,6 +22,18 @@ then
 python -m jupyter notebook
 ```
 
+Windows users should use [Git Bash](https://gitforwindows.org/) and Python version > 3.8 and < 3.11.
+
+```sh
+bash install.sh
+source .venv/Scripts/activate
+```
+
+then
+```sh
+python -m jupyter notebook
+```
+
 For a more detailed guide, please check out the
 [contributing document](./CONTRIBUTING.md).
 
