@@ -1,3 +1,5 @@
+--prefer-binary 
+
 notebook
 ipython>=6
 nbformat>=4

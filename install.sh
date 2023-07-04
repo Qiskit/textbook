@@ -1,11 +1,18 @@
 #!/bin/sh
 set -e
 
-# Setup Python venv and install packages
+
+# Get the operating system name
+os_name=$(uname -o)
+
 echo "Setting up Python virtual environment in ./.venv"
 python3.8 -m venv ./.venv
-. .venv/bin/activate
-python3.8 -m pip install -r environment/requirements.txt
+if [[ "$os_name" == "Cygwin" || "$os_name" == "Msys" ]]; then
+    . .venv/Scripts/activate
+else
+    . .venv/bin/activate
+fi
+python -m pip install -r environment/requirements.txt
 
 # Create default profile, then copy over our custom settings
 export IPYTHONDIR="./environment/ipython"
