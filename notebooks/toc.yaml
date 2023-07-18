@@ -169,7 +169,15 @@
     - title: Quantum query algorithms
       id: query-algorithms
       uuid: f236ed68-91f2-470a-8152-29f09e60a30c
-      url: /algorithms/quantum-query-algorithms
+      url: /algorithms/01.query-algorithms/quantum-query-algorithms
+    - title: Algorithmic foundations
+      id: algorithmic-foundations
+      uuid: 00b26932-7d64-436c-86a9-56091c0419ac
+      url: /algorithms/02.algorithmic-foundations/algorithmic-foundations
+    - title: Phase estimation
+      id: phase-estimation
+      uuid: b49f2ca0-240d-417a-8f51-a6288d504ca3
+      url: /algorithms/03.phase-estimation/phase-estimation-and-factoring
 
 - title: Introduction to Quantum Computing
   id: introduction-course
