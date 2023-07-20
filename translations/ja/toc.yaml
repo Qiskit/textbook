@@ -1,10 +1,10 @@
 - title: 前提条件
   url: /ch-prerequisites
   sections:
-    - id: environment-setup-guide-to-work-with-qiskit-textbook
+    - id: setting-the-environment
       uuid: a5a86ddc-b519-11ec-b909-0242ac120002
       url: /ch-prerequisites/setting-the-environment
-    - id: introduction-to-python-and-jupyter-notebooks
+    - id: python-and-jupyter-notebooks
       uuid: a9f5ea68-b519-11ec-b909-0242ac120002
       url: /ch-prerequisites/python-and-jupyter-notebooks
 
@@ -15,7 +15,7 @@
     - id: introduction
       uuid: afcc559e-b519-11ec-b909-0242ac120002
       url: /ch-states/introduction
-    - id: the-atoms-of-computation
+    - id: atoms-computation
       uuid: b31c20ee-b519-11ec-b909-0242ac120002
       url: /ch-states/atoms-computation
     - id: representing-qubit-states
@@ -24,7 +24,7 @@
     - id: single-qubit-gates
       uuid: bd4334a4-b519-11ec-b909-0242ac120002
       url: /ch-states/single-qubit-gates
-    - id: the-case-for-quantum-computers
+    - id: case-for-quantum
       uuid: c0bbff62-b519-11ec-b909-0242ac120002
       url: /ch-states/case-for-quantum
 
@@ -41,13 +41,13 @@
     - id: phase-kickback
       uuid: cb7353ec-b519-11ec-b909-0242ac120002
       url: /ch-gates/phase-kickback
-    - id: basic-circuit-identities
+    - id: more-circuit-identities
       uuid: ce8ce75a-b519-11ec-b909-0242ac120002
       url: /ch-gates/more-circuit-identities
     - id: proving-universality
       uuid: d15d3548-b519-11ec-b909-0242ac120002
       url: /ch-gates/proving-universality
-    - id: classical-computation-on-a-quantum-computer
+    - id: oracles
       uuid: d4f6e424-b519-11ec-b909-0242ac120002
       url: /ch-gates/oracles
 
@@ -55,16 +55,16 @@
 - title: 量子プロトコルと量子アルゴリズム
   url: /ch-algorithms
   sections:
-    - id: quantum-circuits
+    - id: defining-quantum-circuits
       uuid: d90cbfb6-b519-11ec-b909-0242ac120002
       url: /ch-algorithms/defining-quantum-circuits
-    - id: deutsch-jozsa-algorithm
+    - id: deutsch-jozsa
       uuid: dc9d3aa2-b519-11ec-b909-0242ac120002
       url: /ch-algorithms/deutsch-jozsa
-    - id: bernstein-vazirani-algorithm
+    - id: bernstein-vazirani
       uuid: df6e5a40-b519-11ec-b909-0242ac120002
       url: /ch-algorithms/bernstein-vazirani
-    - id: simons-algorithm
+    - id: simon
       uuid: e2714126-b519-11ec-b909-0242ac120002
       url: /ch-algorithms/simon
     - id: quantum-fourier-transform
@@ -73,16 +73,19 @@
     - id: quantum-phase-estimation
       uuid: e8ac9ec8-b519-11ec-b909-0242ac120002
       url: /ch-algorithms/quantum-phase-estimation
-    - id: shors-algorithm
+    - id: shor
       uuid: ec157cd8-b519-11ec-b909-0242ac120002
       url: /ch-algorithms/shor
-    - id: grovers-algorithm
+    - id: grover
       uuid: eebb7488-b519-11ec-b909-0242ac120002
       url: /ch-algorithms/grover
     - id: quantum-counting
       uuid: f1a9942c-b519-11ec-b909-0242ac120002
       url: /ch-algorithms/quantum-counting
-    - id: quantum-teleportation
+    - id: quantum-walk-search-algorithm
+      uuid: 9a061c81-d490-4fff-bb71-727408234082
+      url: /ch-algorithms/quantum-walk-search-algorithm
+    - id: teleportation
       uuid: f4f4a090-b519-11ec-b909-0242ac120002
       url: /ch-algorithms/teleportation
     - id: superdense-coding
@@ -96,32 +99,32 @@
 - title: 量子アプリケーションのアルゴリズム
   url: /ch-applications
   sections:
-    - id: solving-linear-systems-of-equations-using-hhl-and-its-qiskit-implementation
+    - id: hhl_tutorial
       uuid: 01484810-b51a-11ec-b909-0242ac120002
       url: /ch-applications/hhl_tutorial
-    - id: simulating-molecules-using-vqe
+    - id: vqe-molecules
       uuid: 041df288-b51a-11ec-b909-0242ac120002
       url: /ch-applications/vqe-molecules
-    - id: solving-combinatorial-optimization-problems-using-qaoa
+    - id: qaoa
       uuid: 06ff7ada-b51a-11ec-b909-0242ac120002
       url: /ch-applications/qaoa
-    - id: solving-satisfiability-problems-using-grovers-algorithm
+    - id: satisfiability-grover
       uuid: 09d1529c-b51a-11ec-b909-0242ac120002
       url: /ch-applications/satisfiability-grover
-    - id: hybrid-quantum-classical-neural-networks-with-pytorch-and-qiskit
+    - id: machine-learning-qiskit-pytorch
       uuid: 0cac4d14-b51a-11ec-b909-0242ac120002
       url: /ch-machine-learning/machine-learning-qiskit-pytorch
-    - id: the-variational-quantum-linear-solver
+    - id: vqls
       uuid: 1163f456-b51a-11ec-b909-0242ac120002
       url: /ch-paper-implementations/vqls
-    - id: flexible-representation-of-quantum-images-frqi
+    - id: image-processing-frqi-neqr
       uuid: 14acf6a8-b51a-11ec-b909-0242ac120002
       url: /ch-applications/image-processing-frqi-neqr
 
 - title: 量子回路による量子ハードウェアの探究
   url: /quantum-hardware
   sections:
-    - id: introduction-to-quantum-error-correction-via-the-repetition-code
+    - id: error-correction-repetition-code
       uuid: 197f7f66-b51a-11ec-b909-0242ac120002
       url: /ch-quantum-hardware/error-correction-repetition-code
     - id: measurement-error-mitigation
@@ -138,16 +141,16 @@
 - title: マイクロ波パルスによる量子ハードウェアの探究
   url: /quantum-hardware-pulses
   sections:
-    - id: calibrating-qubits-using-qiskit-pulse
+    - id: calibrating-qubits-pulse
       uuid: 292100ca-b51a-11ec-b909-0242ac120002
       url: /ch-quantum-hardware/calibrating-qubits-pulse
-    - id: accessing-higher-energy-states-with-qiskit-pulse
+    - id: accessing_higher_energy_states
       uuid: 2bf0d316-b51a-11ec-b909-0242ac120002
       url: /ch-quantum-hardware/accessing_higher_energy_states
-    - id: introduction-to-transmon-physics
+    - id: transmon-physics
       uuid: 2e944e0e-b51a-11ec-b909-0242ac120002
       url: /ch-quantum-hardware/transmon-physics
-    - id: circuit-quantum-electrodynamics
+    - id: cQED-JC-SW
       uuid: 31b2ccdc-b51a-11ec-b909-0242ac120002
       url: /ch-quantum-hardware/cQED-JC-SW
 
@@ -155,10 +158,10 @@
 - title: 量子コンピューティング・ラボ
   url: /ch-labs
   sections:
-    - id: lab-1-quantum-circuits
+    - id: Lab01_QuantumCircuits
       uuid: 3ff5a7ec-b51a-11ec-b909-0242ac120002
       url: /ch-labs/Lab01_QuantumCircuits
-    - id: lab-2-quantum-measurement
+    - id: Lab02_QuantumMeasurement
       uuid: 82eb9557-1420-487b-a3a5-72fdf38878e8
       url: /ch-labs/Lab02_QuantumMeasurement
     
@@ -166,10 +169,10 @@
 - title: Appendix(付録)
   url: /ch-appendix
   sections:
-    - id: an-introduction-to-linear-algebra-for-quantum-computing
+    - id: linear_algebra
       uuid: 5d2bb2ca-b51a-11ec-b909-0242ac120002
       url: /ch-appendix/linear_algebra
-    - id: basic-qiskit-syntax
+    - id: qiskit
       uuid: 5fd6b79a-b51a-11ec-b909-0242ac120002
       url: /ch-appendix/qiskit
 
@@ -177,9 +180,9 @@
 - title: ゲームとデモ
   url: /ch-demos
   sections:
-    - id: bonus-level-sandbox
+    - id: hello-qiskit
       uuid: 63a85f0e-b51a-11ec-b909-0242ac120002
       url: /ch-ex/hello-qiskit
-    - id: estimating-pi-using-quantum-phase-estimation-algorithm
+    - id: piday-code
       uuid: 69b9707c-b51a-11ec-b909-0242ac120002
       url: /ch-demos/piday-code
