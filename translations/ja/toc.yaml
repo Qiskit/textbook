@@ -98,15 +98,18 @@
     - id: quantum-counting
       uuid: f1a9942c-b519-11ec-b909-0242ac120002
       url: /ch-algorithms/quantum-counting
-    - id: quantum-teleportation
-      uuid: f4f4a090-b519-11ec-b909-0242ac120002
-      url: /ch-algorithms/teleportation
-    - id: superdense-coding
-      uuid: f87cbd42-b519-11ec-b909-0242ac120002
-      url: /ch-algorithms/superdense-coding
+    - id: quantum-walk-search-algorithm
+      uuid: b2ef52cf-0ce4-494a-8142-fd00e0e8330d
+      url: /ch-algorithms/quantum-walk-search-algorithm
     - id: quantum-key-distribution
       uuid: fbafa8c6-b519-11ec-b909-0242ac120002
       url: /ch-algorithms/quantum-key-distribution
+    - id: superdense-coding
+      uuid: f87cbd42-b519-11ec-b909-0242ac120002
+      url: /ch-algorithms/superdense-coding
+    - id: quantum-teleportation
+      uuid: f4f4a090-b519-11ec-b909-0242ac120002
+      url: /ch-algorithms/teleportation
 
 
 - title: 量子アプリケーションのアルゴリズム
@@ -200,10 +203,10 @@
 - title: Appendix(付録)
   url: /ch-appendix
   sections:
-    - id: an-introduction-to-linear-algebra-for-quantum-computing
+    - id: linear_algebra
       uuid: 5d2bb2ca-b51a-11ec-b909-0242ac120002
       url: /ch-appendix/linear_algebra
-    - id: basic-qiskit-syntax
+    - id: qiskit
       uuid: 5fd6b79a-b51a-11ec-b909-0242ac120002
       url: /ch-appendix/qiskit
 
@@ -211,7 +214,7 @@
 - title: ゲームとデモ
   url: /ch-demos
   sections:
-    - id: bonus-level-sandbox
+    - id: hello-qiskit
       uuid: 63a85f0e-b51a-11ec-b909-0242ac120002
       url: /ch-ex/hello-qiskit
     - id: estimating-pi-using-quantum-phase-estimation-algorithm
