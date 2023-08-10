@@ -1,0 +1,64 @@
+name: Test and release
+
+on:
+  push:
+    branches:
+      - 'dev/v3.x'
+  workflow_dispatch:
+    inputs:
+      database:
+        description: "Database to push to"
+        required: true 
+        default: 'STAGING'
+        type: choice
+        options:
+          - STAGING
+          - PRODUCTION
+
+env:
+  # Disable Tensorflow information messages
+  TF_CPP_MIN_LOG_LEVEL: 3
+
+jobs:
+  test-and-release:
+    name: Run tests and publish to staging
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v3
+
+      - name: Setup | Install Vale
+        run: sudo snap install --edge vale
+
+      - name: Setup | Install Python 3.8
+        uses: actions/setup-python@v2
+        with:
+          python-version: 3.8
+
+      - name: Setup | Python environment
+        run: |
+          ./install.sh
+          . .venv/bin/activate
+          echo $PATH >> $GITHUB_PATH
+          echo "IPYTHONDIR=$(pwd)/environment/ipython" >> $GITHUB_ENV
+          echo "QISKIT_SETTINGS=$(pwd)/environment/qiskit/settings.conf" >> $GITHUB_ENV
+
+      - name: Test | Check formatting
+        run: ./tests/run_formatting.sh
+
+      - name: Test | Lint notebooks
+        run: ./tests/run_lint.sh
+
+      - name: Test | Run notebooks
+        run: |
+          python ./tests/passes/nb_autorun.py notebooks/**/*.ipynb --fail-on-warning
+
+      - name: Publish to staging
+        env:
+          DIRECTUS_EMAIL: ${{ secrets.DIRECTUS_EMAIL }}
+          DIRECTUS_PASSWORD: ${{ secrets.DIRECTUS_PASSWORD }}
+        run: |
+          if ${{ github.event.inputs.environment }}; then
+              echo "DIRECTUS_DATABASE=${{ inputs.database }}" >> $GITHUB_ENV
+          fi
+          python release.py notebooks/basics/**/*.ipynb  # TODO: generalize
