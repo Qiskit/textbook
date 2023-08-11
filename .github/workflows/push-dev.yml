@@ -1,0 +1,12 @@
+on:
+  push:
+    branches:
+      - dev/v3.x
+
+jobs:
+  push_to_staging:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: Qiskit/textbook/.github/workflows/release.yml@dev/v3.x
+        with:
+          database: STAGING

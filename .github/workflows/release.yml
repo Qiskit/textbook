@@ -6,6 +6,7 @@ on:
       database:
         required: true
         type: string
+    secrets: inherit
 
   workflow_dispatch:
     inputs:
@@ -30,10 +31,10 @@ jobs:
     steps:
       - uses: actions/checkout@v3
 
-      - name: Setup | Install Vale
+      - name: Setup | Vale
         run: sudo snap install --edge vale
 
-      - name: Setup | Install Python 3.8
+      - name: Setup | Python 3.8
         uses: actions/setup-python@v2
         with:
           python-version: 3.8
@@ -46,17 +47,17 @@ jobs:
           echo "IPYTHONDIR=$(pwd)/environment/ipython" >> $GITHUB_ENV
           echo "QISKIT_SETTINGS=$(pwd)/environment/qiskit/settings.conf" >> $GITHUB_ENV
 
-      - name: Test | Check formatting
+      - name: Test | Formatting
         run: ./tests/run_formatting.sh
 
-      - name: Test | Lint notebooks
+      - name: Test | Lint
         run: ./tests/run_lint.sh
 
-      - name: Test | Run notebooks
+      - name: Test | Code examples
         run: |
           python ./tests/passes/nb_autorun.py notebooks/basics/**/*.ipynb --fail-on-warning # TODO: generalize to other notebooks
 
-      - name: Publish to staging
+      - name: Publish to database
         env:
           DIRECTUS_DATABASE: ${{ inputs.database }}
           DIRECTUS_TOKEN: ${{ secrets.DIRECTUS_TOKEN_${{ inputs.database }}
