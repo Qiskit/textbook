@@ -64,8 +64,9 @@ def get_access_token(database_url):
     print("  🔑 Logging in:")
     response = requests.post(
         f"{database_url}/auth/login",
-        json=({"email": input("     > Email: "),
-               "password": getpass("     > Password: ")}),
+        json=(
+            {"email": input("     > Email: "), "password": getpass("     > Password: ")}
+        ),
     )
     if response.status_code != 200:
         print("    Couldn't log in 😕\n    Exiting...")
@@ -94,7 +95,7 @@ def push_content(notebook_path):
     # Sort out auth stuff
     AUTH_HEADER = {"Authorization": f"Bearer {get_access_token(lesson.directus.url)}"}
 
-    # Get id of english translation
+    # Get id of english translation (needed for upload)
     print("  * Finding translations ID...")
     response = requests.get(
         f"{lesson.directus.url}/items/lessons/{lesson.directus.id}?fields[]=translations.id,translations.languages_code",
@@ -112,8 +113,8 @@ def push_content(notebook_path):
     lesson.zip_path = Path(
         shutil.make_archive(
             lesson.path / f"{random.randint(0, 1_000_000_000)}_{lesson.name}",
-            'zip',
-            root_dir=lesson.path
+            "zip",
+            root_dir=lesson.path,
         )
     )
 
@@ -130,22 +131,21 @@ def push_content(notebook_path):
 
     TEMP_FILE_ID = response.json()["data"]["id"]
     if response.status_code != 200:
-        raise Exception(f"Problem connecting to Directus (error code {response.status_code}.")
-
+        raise Exception(
+            f"Problem connecting to Directus (error code {response.status_code}."
+        )
 
     print(f"  * Linking upload to lesson {lesson.directus.id}...")
     # 2. Link .zip to content
     response = requests.patch(
         lesson.directus.url + f"/items/lessons/{lesson.directus.id}",
-        json={
-            "translations": [
-                {"id": TRANSLATION_ID, "temporal_file": TEMP_FILE_ID}
-            ]
-        },
+        json={"translations": [{"id": TRANSLATION_ID, "temporal_file": TEMP_FILE_ID}]},
         headers=AUTH_HEADER,
     )
     if response.status_code != 200:
-        raise Exception(f"Problem connecting to Directus (error code {response.status_code}).")
+        raise Exception(
+            f"Problem connecting to Directus (error code {response.status_code})."
+        )
 
     # Clean up zipped file afterwards
     print(f"  * Cleaning up `{lesson.zip_path.name}`...")
@@ -155,6 +155,6 @@ def push_content(notebook_path):
     print("  ✨ Complete! ✨")
 
 
-if __name__=="__main__":
+if __name__ == "__main__":
     for notebook in sys.argv[1:]:
         push_content(notebook)
