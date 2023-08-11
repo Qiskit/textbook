@@ -55,11 +55,11 @@ jobs:
 
       - name: Test | Code examples
         run: |
-          python ./tests/passes/nb_autorun.py notebooks/basics/**/*.ipynb --fail-on-warning # TODO: generalize to other notebooks
+          python ./tests/passes/nb_autorun.py notebooks/**/*.ipynb --fail-on-warning
 
       - name: Publish to database
         env:
           DIRECTUS_DATABASE: ${{ inputs.database }}
           DIRECTUS_TOKEN: ${{ secrets.DIRECTUS_TOKEN_${{ inputs.database }}
         run: |
-          python release.py notebooks/basics/**/*.ipynb  # TODO: generalize
+          python release.py notebooks/**/*.ipynb

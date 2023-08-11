@@ -43,9 +43,13 @@ class Lesson:
         self.name = self.path.parts[-1]
         self.zip_path = None
 
-        with open(self.path / "directus_info.json") as f:
-            data = json.loads(f.read())[database]
-            self.directus = SimpleNamespace(**data)
+        directus_info_path = self.path / "directus_info.json"
+        self.has_directus_info = directus_info_path.exists()
+
+        if self.has_directus_info:
+            with open(self.path / "directus_info.json") as f:
+                data = json.loads(f.read())[database]
+                self.directus = SimpleNamespace(**data)
 
 
 def get_access_token(database_url):
@@ -81,8 +85,11 @@ def push_content(notebook_path):
     """
     DATABASE = os.environ.get("DIRECTUS_DATABASE", "STAGING")
     lesson = Lesson(notebook_path, DATABASE)
+    if not lesson.has_directus_info:
+        print(f"No `directus_info.json` found for {lesson.name}; skipping...")
+        return
 
-    print(f"\nPushing '{lesson.name}' to '{DATABASE}':")
+    print(f"Pushing '{lesson.name}' to '{DATABASE}':")
 
     # Sort out auth stuff
     AUTH_HEADER = {"Authorization": f"Bearer {get_access_token(lesson.directus.url)}"}
@@ -151,4 +158,3 @@ def push_content(notebook_path):
 if __name__=="__main__":
     for notebook in sys.argv[1:]:
         push_content(notebook)
-    del os.environ["DIRECTUS_TOKEN"]
