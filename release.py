@@ -25,7 +25,6 @@ Explanation:
 
 """
 import json
-import requests
 import shutil
 import os
 from pathlib import Path
@@ -34,6 +33,7 @@ import random
 import sys
 from dataclasses import dataclass
 from types import SimpleNamespace
+import requests
 
 
 @dataclass
@@ -47,8 +47,8 @@ class Lesson:
         self.has_directus_info = directus_info_path.exists()
 
         if self.has_directus_info:
-            with open(self.path / "directus_info.json") as f:
-                data = json.loads(f.read())[database]
+            with open(self.path / "directus_info.json") as file:
+                data = json.loads(file.read())[database]
                 self.directus = SimpleNamespace(**data)
 
 
@@ -72,11 +72,11 @@ def get_access_token(database_url):
         print("    Couldn't log in 😕\n    Exiting...")
         sys.exit()
 
-    ACCESS_TOKEN = response.json()["data"]["access_token"]
-    os.environ["DIRECTUS_TOKEN"] = ACCESS_TOKEN
+    token = response.json()["data"]["access_token"]
+    os.environ["DIRECTUS_TOKEN"] = token
     print("    Saved temporary token for remaining uploads.\n")
 
-    return ACCESS_TOKEN
+    return token
 
 
 def push_notebook(notebook_path):
@@ -93,27 +93,28 @@ def push_notebook(notebook_path):
     Args:
         lesson_path (str): path to folder containing notebook and `directus_info.json`.
     """
-    DATABASE = os.environ.get("DIRECTUS_DATABASE", "STAGING")
-    lesson = Lesson(notebook_path, DATABASE)
+    database_name = os.environ.get("DIRECTUS_DATABASE", "STAGING")
+    lesson = Lesson(notebook_path, database_name)
     if not lesson.has_directus_info:
         print(f"No `directus_info.json` found for {lesson.name}; skipping...")
         return
 
-    print(f"Pushing '{lesson.name}' to '{DATABASE}':")
+    print(f"Pushing '{lesson.name}' to '{database_name}':")
 
     # 1. Sort out auth stuff
-    AUTH_HEADER = {"Authorization": f"Bearer {get_access_token(lesson.directus.url)}"}
+    auth_header = {"Authorization": f"Bearer {get_access_token(lesson.directus.url)}"}
 
-    # 2. Get id of english translation (needed for upload)
+    # 2. Get ID of english translation (needed for upload)
     print("  * Finding English translation...")
     response = requests.get(
-        f"{lesson.directus.url}/items/lessons/{lesson.directus.id}?fields[]=translations.id,translations.languages_code",
-        headers=AUTH_HEADER,
+        f"{lesson.directus.url}/items/lessons/{lesson.directus.id}"
+         "?fields[]=translations.id,translations.languages_code",
+        headers=auth_header,
     )
 
     for translation in response.json()["data"]["translations"]:
         if translation["languages_code"] == "en-US":
-            TRANSLATION_ID = translation["id"]
+            translation_id = translation["id"]
             break
         raise ValueError("No 'en-US' translation found!")
 
@@ -131,13 +132,13 @@ def push_notebook(notebook_path):
     print(f"  * Uploading `{lesson.zip_path.name}`...")
     with open(lesson.zip_path, "rb") as fileobj:
         response = requests.post(
-            lesson.directus.url + f"/files",
+            lesson.directus.url + "/files",
             files={"file": (fileobj)},
             data={"filename": lesson.zip_path.stem},
-            headers=AUTH_HEADER,
+            headers=auth_header,
         )
 
-    TEMP_FILE_ID = response.json()["data"]["id"]
+    temp_file_id = response.json()["data"]["id"]
     if response.status_code != 200:
         raise Exception(
             f"Problem connecting to Directus (error code {response.status_code}."
@@ -147,8 +148,8 @@ def push_notebook(notebook_path):
     # 5. Link .zip to content
     response = requests.patch(
         lesson.directus.url + f"/items/lessons/{lesson.directus.id}",
-        json={"translations": [{"id": TRANSLATION_ID, "temporal_file": TEMP_FILE_ID}]},
-        headers=AUTH_HEADER,
+        json={"translations": [{"id": translation_id, "temporal_file": temp_file_id}]},
+        headers=auth_header,
     )
     if response.status_code != 200:
         raise Exception(
