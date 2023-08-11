@@ -35,6 +35,7 @@ import sys
 from dataclasses import dataclass
 from types import SimpleNamespace
 
+
 @dataclass
 class Lesson:
     def __init__(self, notebook_path, database):
@@ -47,23 +48,57 @@ class Lesson:
             self.directus = SimpleNamespace(**data)
 
 
-def input_login_environment_variables():
-    os.environ["DIRECTUS_EMAIL"] = input("Email: ")
-    os.environ["DIRECTUS_PASSWORD"] = getpass()
+def get_access_token(database_url):
+    """
+    Either token is in env variable, or we use login details
+    to get temporary access token.
+    """
+    if os.environ.get("DIRECTUS_TOKEN", None) is not None:
+        print("  * Using saved access token...")
+        return os.environ.get("DIRECTUS_TOKEN")
+
+    print("  🔑 Logging in:")
+    response = requests.post(
+        f"{database_url}/auth/login",
+        json=({"email": input("     > Email: "),
+               "password": getpass("     > Password: ")}),
+    )
+    if response.status_code != 200:
+        print("    Couldn't log in 😕\n    Exiting...")
+        sys.exit()
+
+    ACCESS_TOKEN = response.json()["data"]["access_token"]
+    os.environ["DIRECTUS_TOKEN"] = ACCESS_TOKEN
+    print("    Saved temporary token for remaining uploads.\n")
+
+    return ACCESS_TOKEN
+
 
 def push_content(notebook_path):
     """
     Args:
         lesson_path (str): path to folder containing notebook and `directus_info.json`.
     """
-    if os.environ.get("DIRECTUS_PASSWORD", None) is None:
-        raise ValueError("No directus login details found: exiting")
-
-
     DATABASE = os.environ.get("DIRECTUS_DATABASE", "STAGING")
     lesson = Lesson(notebook_path, DATABASE)
 
     print(f"\nPushing '{lesson.name}' to '{DATABASE}':")
+
+    # Sort out auth stuff
+    AUTH_HEADER = {"Authorization": f"Bearer {get_access_token(lesson.directus.url)}"}
+
+    # Get id of english translation
+    print("  * Finding translations ID...")
+    response = requests.get(
+        f"{lesson.directus.url}/items/lessons/{lesson.directus.id}?fields[]=translations.id,translations.languages_code",
+        headers=AUTH_HEADER,
+    )
+
+    for translation in response.json()["data"]["translations"]:
+        if translation["languages_code"] == "en-US":
+            TRANSLATION_ID = translation["id"]
+            break
+        raise ValueError("No 'en-US' translation found!")
 
     # Zip file
     print("  * Zipping folder...")
@@ -75,41 +110,18 @@ def push_content(notebook_path):
         )
     )
 
-    # Log in
-    print("  * Logging in...")
-    response = requests.post(
-        f"{lesson.directus.url}/auth/login",
-        json=({"email": os.environ["DIRECTUS_EMAIL"],
-               "password": os.environ["DIRECTUS_PASSWORD"]}),
-    )
-
-    ACCESS_TOKEN = response.json()["data"]["access_token"]
-
-    print("  * Finding translations ID...")
-    # Get id of english translation
-    response = requests.get(
-        f"{lesson.directus.url}/items/lessons/{lesson.directus.id}?fields[]=translations.id,translations.languages_code",
-        headers={"Authorization": f"Bearer {ACCESS_TOKEN}"},
-    )
-    TRANSLATION_ID = 0
-    for translation in response.json()["data"]["translations"]:
-        if translation["languages_code"] == "en-US":
-            TRANSLATION_ID = translation["id"]
-            break
-        raise ValueError("No en-US translation found!")
-
-    print(f"  * Uploading `{lesson.zip_path.name}`...")
     # Update page
     # 1. Upload .zip
+    print(f"  * Uploading `{lesson.zip_path.name}`...")
     with open(lesson.zip_path, "rb") as fileobj:
         response = requests.post(
             lesson.directus.url + f"/files",
             files={"file": (fileobj)},
             data={"filename": lesson.zip_path.stem},
-            headers={"Authorization": f"Bearer {ACCESS_TOKEN}"},
+            headers=AUTH_HEADER,
         )
 
-    temp_file_id = response.json()["data"]["id"]
+    TEMP_FILE_ID = response.json()["data"]["id"]
     if response.status_code != 200:
         raise Exception(f"Problem connecting to Directus (error code {response.status_code}.")
 
@@ -120,23 +132,23 @@ def push_content(notebook_path):
         lesson.directus.url + f"/items/lessons/{lesson.directus.id}",
         json={
             "translations": [
-                {"id": TRANSLATION_ID, "temporal_file": temp_file_id}
+                {"id": TRANSLATION_ID, "temporal_file": TEMP_FILE_ID}
             ]
         },
-        headers={"Authorization": f"Bearer {ACCESS_TOKEN}"},
+        headers=AUTH_HEADER,
     )
     if response.status_code != 200:
-        raise Exception(f"Problem connecting to Directus (error code {response.status_code}.")
+        raise Exception(f"Problem connecting to Directus (error code {response.status_code}).")
 
     # Clean up zipped file afterwards
-    print(f"  * Deleting `{lesson.zip_path.name}`...")
+    print(f"  * Cleaning up `{lesson.zip_path.name}`...")
     os.remove(lesson.zip_path)
 
-    print("  Complete!")
+    # Remove temporary access token so we don't try and use it after it expires
+    print("  ✨ Complete! ✨")
 
 
 if __name__=="__main__":
-    if os.environ.get("DIRECTUS_PASSWORD", None) is None:
-        input_login_environment_variables()
     for notebook in sys.argv[1:]:
         push_content(notebook)
+    del os.environ["DIRECTUS_TOKEN"]

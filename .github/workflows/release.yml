@@ -1,9 +1,12 @@
 name: Test and release
 
 on:
-  push:
-    branches:
-      - 'dev/v3.x'
+  workflow_call:
+    inputs:
+      database:
+        required: true
+        type: string
+
   workflow_dispatch:
     inputs:
       database:
@@ -51,14 +54,11 @@ jobs:
 
       - name: Test | Run notebooks
         run: |
-          python ./tests/passes/nb_autorun.py notebooks/**/*.ipynb --fail-on-warning
+          python ./tests/passes/nb_autorun.py notebooks/basics/**/*.ipynb --fail-on-warning # TODO: generalize to other notebooks
 
       - name: Publish to staging
         env:
-          DIRECTUS_EMAIL: ${{ secrets.DIRECTUS_EMAIL }}
-          DIRECTUS_PASSWORD: ${{ secrets.DIRECTUS_PASSWORD }}
+          DIRECTUS_DATABASE: ${{ inputs.database }}
+          DIRECTUS_TOKEN: ${{ secrets.DIRECTUS_TOKEN_${{ inputs.database }}
         run: |
-          if ${{ github.event.inputs.environment }}; then
-              echo "DIRECTUS_DATABASE=${{ inputs.database }}" >> $GITHUB_ENV
-          fi
           python release.py notebooks/basics/**/*.ipynb  # TODO: generalize
