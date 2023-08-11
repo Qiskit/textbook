@@ -79,8 +79,17 @@ def get_access_token(database_url):
     return ACCESS_TOKEN
 
 
-def push_content(notebook_path):
+def push_notebook(notebook_path):
     """
+    Steps:
+      1. Get access token from environment variable, or ask for login details
+         to get temporary access token
+      2. Get the translation ID of the English translation (needed for upload)
+      3. Zip the folder containing notebook and images
+      4. Upload the zip file to the database
+      5. Link the zip file in the database to the lesson
+      6. Clean up: delete the zip file from local disk
+
     Args:
         lesson_path (str): path to folder containing notebook and `directus_info.json`.
     """
@@ -92,11 +101,11 @@ def push_content(notebook_path):
 
     print(f"Pushing '{lesson.name}' to '{DATABASE}':")
 
-    # Sort out auth stuff
+    # 1. Sort out auth stuff
     AUTH_HEADER = {"Authorization": f"Bearer {get_access_token(lesson.directus.url)}"}
 
-    # Get id of english translation (needed for upload)
-    print("  * Finding translations ID...")
+    # 2. Get id of english translation (needed for upload)
+    print("  * Finding English translation...")
     response = requests.get(
         f"{lesson.directus.url}/items/lessons/{lesson.directus.id}?fields[]=translations.id,translations.languages_code",
         headers=AUTH_HEADER,
@@ -108,7 +117,7 @@ def push_content(notebook_path):
             break
         raise ValueError("No 'en-US' translation found!")
 
-    # Zip file
+    # 3. Zip file
     print("  * Zipping folder...")
     lesson.zip_path = Path(
         shutil.make_archive(
@@ -118,8 +127,7 @@ def push_content(notebook_path):
         )
     )
 
-    # Update page
-    # 1. Upload .zip
+    # 4. Upload .zip
     print(f"  * Uploading `{lesson.zip_path.name}`...")
     with open(lesson.zip_path, "rb") as fileobj:
         response = requests.post(
@@ -136,7 +144,7 @@ def push_content(notebook_path):
         )
 
     print(f"  * Linking upload to lesson {lesson.directus.id}...")
-    # 2. Link .zip to content
+    # 5. Link .zip to content
     response = requests.patch(
         lesson.directus.url + f"/items/lessons/{lesson.directus.id}",
         json={"translations": [{"id": TRANSLATION_ID, "temporal_file": TEMP_FILE_ID}]},
@@ -147,14 +155,13 @@ def push_content(notebook_path):
             f"Problem connecting to Directus (error code {response.status_code})."
         )
 
-    # Clean up zipped file afterwards
+    # 6. Clean up zipped file afterwards
     print(f"  * Cleaning up `{lesson.zip_path.name}`...")
     os.remove(lesson.zip_path)
 
-    # Remove temporary access token so we don't try and use it after it expires
     print("  ✨ Complete! ✨")
 
 
 if __name__ == "__main__":
     for notebook in sys.argv[1:]:
-        push_content(notebook)
+        push_notebook(notebook)
