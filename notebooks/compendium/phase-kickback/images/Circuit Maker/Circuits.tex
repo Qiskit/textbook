@@ -1,0 +1,99 @@
+\documentclass{beamer}
+
+% \usepackage{beamerthemesplit} // Activate for custom appearance
+\usepackage{tikz}
+\usetikzlibrary{quantikz}
+
+\title{Quantum Circuits}
+\author{Jacob Watkins}
+\date{\today}
+
+\begin{document}
+
+\frame{\titlepage}
+
+\section[Outline]{}
+\frame{\tableofcontents}
+
+\section{Introduction}
+\subsection{Quantum CIrcuit Diagram}
+
+\frame
+{
+  \frametitle{Standard controlled gate}
+\begin{center}
+\begin{quantikz} [column sep=1cm]
+	\lstick{control}\qwbundle[alternate]{}&\ctrlbundle{1}&\qwbundle[alternate]{}\\ 
+	\lstick{target}\qwbundle[alternate=2]{}&\gate[nwires=1]{G}\qwbundle[alternate=2]{}& \qwbundle[alternate=2]{} 
+\end{quantikz}
+\end{center}
+}
+
+\frame
+{
+  \frametitle{Flipped diagonal gate}
+
+\begin{center}
+\begin{quantikz} [column sep=1cm,align equals at=1.5]
+	\qwbundle[alternate]{}&\ctrlbundle{1}&\qwbundle[alternate]{}\\ 
+	\qwbundle[alternate]{}&\gate[nwires=1]{D}\qwbundle[alternate]{}& \qwbundle[alternate]{} 
+\end{quantikz} 
+= 
+\begin{quantikz} [column sep=1cm,align equals at=1.5]
+	\qwbundle[alternate]{}&\gate{D'}\qwbundle[alternate]{}&\qwbundle[alternate]{}\\ 
+	\qwbundle[alternate]{}&\ctrlbundle{-1}\qwbundle[alternate]{}& \qwbundle[alternate]{} 
+\end{quantikz}
+\end{center}
+}
+
+\frame
+{
+  \frametitle{Flipped CZ}
+
+\begin{center}
+\begin{quantikz} [column sep=1cm,align equals at=1.5]
+	\qw&\ctrl{1}&\qw\\ 
+	\qw&\gate{Z}\qw& \qw
+\end{quantikz} 
+= 
+\begin{quantikz} [column sep=1cm,align equals at=1.5]
+	\qw&\gate{Z}\qw&\qw\\ 
+	\qw&\ctrl{-1}\qw& \qw
+\end{quantikz}
+\end{center}
+}
+
+\frame
+{
+  \frametitle{Symmetric CZ}
+
+\begin{center}
+\begin{quantikz} [column sep=.7cm, row sep = 1cm]
+	\qw&\ctrl{1}&\qw\\ 
+	\qw&\control{}&\qw
+\end{quantikz} 
+\end{center}
+}
+
+\frame
+{
+  \frametitle{General kickback}
+  
+\begin{center}
+\begin{quantikz} [column sep=.6cm, align equals at=1.5]
+	\qwbundle[alternate]{}&\ctrlbundle{1}&\qwbundle[alternate]{}\\ 
+	\qwbundle[alternate]{}&\gate[nwires=1]{U}\qwbundle[alternate]{}& \qwbundle[alternate]{} 
+\end{quantikz}
+\;\;\;= 
+\begin{quantikz} [column sep=.3cm,align equals at=1.5]
+	&\qwbundle[alternate]{}&\ctrlbundle{1}&\qwbundle[alternate]{}&\qwbundle[alternate]{}\\ 
+	\qwbundle[alternate]{}&\gate[nwires=3]{S^\dagger}\qwbundle[alternate]{}&\gate[nwires=3]{D}\qwbundle[alternate]{}& \gate[nwires=3]{S}\qwbundle[alternate]{}&\qwbundle[alternate]{}
+\end{quantikz} 
+\;\;\;= 
+\begin{quantikz} [column sep=.3cm,align equals at=1.5]
+	&\qwbundle[alternate]{}&\gate[nwires=3]{D'}\qwbundle[alternate]{}&\qwbundle[alternate]{}&\qwbundle[alternate]{}\\ 
+	\qwbundle[alternate]{}&\gate[nwires=3]{S^\dagger}\qwbundle[alternate]{}&\ctrlbundle{-1}& \gate[nwires=3]{S}\qwbundle[alternate]{}&\qwbundle[alternate]{}
+\end{quantikz} 
+\end{center}
+}
+\end{document}
