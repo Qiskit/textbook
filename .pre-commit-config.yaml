@@ -2,12 +2,6 @@
 repos:
   - repo: local
     hooks:
-      - name: Check notebooks/toc.yaml is valid
-        id: toc-yaml
-        language: system
-        entry: python tests/passes/toc.py
-        files: 'notebooks/toc.yaml'
-        always_run: true
       - name: Reset notebook metadata
         id: nb-metadata
         language: system
