@@ -34,10 +34,10 @@ jobs:
 
       - name: Install release script
         run: |
-          pip install git+https://github.com/frankharkins/learning-content-tools.git#subdirectory=iql-notebook-sync
+          pip install git+https://github.com/frankharkins/learning-content-tools.git#subdirectory=iql-lesson-sync
 
       - name: Publish to database
         env:
           DIRECTUS_DATABASE: ${{ inputs.database }}
           DIRECTUS_TOKEN: ${{ secrets.DIRECTUS_TOKEN_${{ inputs.database }}
-        run: sync-notebooks
+        run: sync-lessons
