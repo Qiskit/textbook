@@ -1,0 +1,13 @@
+lessons:
+  - path: notebooks/basics/01.single-systems
+    idStaging: 11845b3b-1acc-4173-b93b-9f7cbcbb552a
+    idProduction: eefd98dc-2f3b-49a1-973c-8222a420c99f
+  - path: notebooks/basics/02.multiple-systems
+    idStaging: a0c9e6e1-85f6-48da-8d38-edd7eb1722cc
+    idProduction: 56f27b27-446e-46aa-b392-7879bc135b13
+  - path: notebooks/basics/03.quantum-circuits
+    idStaging: 8dc1b4c8-8d3a-45d1-858c-64dc07590e08
+    idProduction: 819f2dd8-792c-4093-9cc6-f0ea0c0c0c27
+  - path: notebooks/basics/04.entanglement-in-action
+    idStaging: 2ceb7652-1e46-404f-91f9-b7b3986e13c9
+    idProduction: c7d99bf8-723f-449f-a1e4-e0e795de6247

@@ -1,0 +1,43 @@
+name: Release
+
+on:
+  workflow_call:
+    inputs:
+      database:
+        required: true
+        type: string
+    secrets: inherit
+
+  workflow_dispatch:
+    inputs:
+      database:
+        description: "Database to push to"
+        required: true 
+        default: 'Staging'
+        type: choice
+        options:
+          - Staging
+          - Production
+
+jobs:
+  test-and-release:
+    name: Push notebooks to database
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v3
+
+      - name: Setup Python 3.11
+        uses: actions/setup-python@v2
+        with:
+          python-version: 3.11
+
+      - name: Install release script
+        run: |
+          pip install git+https://github.com/frankharkins/learning-content-tools.git#subdirectory=iql-lesson-sync
+
+      - name: Publish to database
+        env:
+          LEARNING_API_NAME: ${{ inputs.database }}
+          LEARNING_API_TOKEN: ${{ secrets.LEARNING_API_TOKEN_${{ inputs.database }}
+        run: sync-lessons
