@@ -9,3 +9,15 @@ This repository contains the source files for the Qiskit Textbook.
 
 Each page in the textbook is a Jupyter notebook in the
 [`notebooks`](./notebooks) folder.
+
+## Bibtex citation
+
+```
+@book{qiskitextbook2023,   
+    author = {various authors},   
+    year = {2023},   
+    title = {Qiskit Textbook},   
+    publisher = {Github},   
+    url = {https://github.com/Qiskit/textbook}, 
+}
+```
