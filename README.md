@@ -72,7 +72,9 @@ For a verision number `MAJOR.MINOR.PATCH`, we will increment the:
 For example, if you're teaching using `v1.0.3`, you know you can switch to any
 `v1.0.x` version without sections disappearing or code breaking with your
 existing setup.
+
 ## Bibtex citation
+
 ```
 @book{qiskitextbook2023,   
     author = {various authors},   
