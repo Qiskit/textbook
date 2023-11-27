@@ -22,6 +22,6 @@ microwave pulses.
 2. [Accessing higher energy states with Qiskit Pulse](./accessing_higher_energy_states.ipynb)
 3. [Introduction to Transmon Physics](./transmon-physics.ipynb)
 4. [Circuit Quantum Electrodynamics](./cQED-JC-SW.ipynb)
-5. [Exploring the Jaynes-Cummings Hamiltonian with Qiskit Pulse"](./Jaynes-Cummings-model.ipynb)
-6. [Measuring the Qubit ac-Stark Shift"](./ac-Stark-shift.ipynb)
+5. [Exploring the Jaynes-Cummings Hamiltonian with Qiskit Pulse](./Jaynes-Cummings-model.ipynb)
+6. [Measuring the Qubit ac-Stark Shift](./ac-Stark-shift.ipynb)
 7. [Hamiltonian Tomography](./hamiltonian-tomography.ipynb)

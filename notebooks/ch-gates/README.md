@@ -19,7 +19,7 @@ interesting behaviours of multi-qubit systems.
 
 1. [Introduction](./introduction.ipynb)
 2. [Multiple Qubits and Entangled States](./multiple-qubits-entangled-states.ipynb)
-3. [Phase Kickback\n"](./phase-kickback.ipynb)
+3. [Phase Kickback](./phase-kickback.ipynb)
 4. [Basic Circuit Identities](./basic-circuit-identities.ipynb)
 5. [Classical Computation on a Quantum Computer](./oracles.ipynb)
 6. [Proving Universality](./proving-universality.ipynb)
