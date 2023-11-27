@@ -1,7 +1,0 @@
-extends: existence
-message: "Found unfinished 'to do' note."
-ignorecase: true
-level: error
-tokens:
-  - TODO
-  - "To do:"
