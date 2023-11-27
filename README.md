@@ -1,4 +1,4 @@
-# README
+# Qiskit Textbook content
 
 This repository contains the source files for the Qiskit Textbook.
 
