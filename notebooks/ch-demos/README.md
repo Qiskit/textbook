@@ -1,4 +1,4 @@
-# README
+# Games and Demos
 
 These notebooks are the source files for the _Games and Demos_ section of the
 Qiskit Textbook.

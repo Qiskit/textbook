@@ -1,4 +1,4 @@
-# README
+# Appendix
 
 These notebooks are the source files for the _Appendix_ section of the Qiskit Textbook.
 

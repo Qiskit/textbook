@@ -1,4 +1,4 @@
-# README
+# Investigating Quantum Hardware using Microwave Pulses
 
 These notebooks are the source files for the _Investigating Quantum Hardware
 using Microwave Pulses_ chapter of the Qiskit Textbook.

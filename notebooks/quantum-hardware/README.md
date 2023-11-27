@@ -1,4 +1,4 @@
-# README
+# Investigating Quantum Hardware using Quantum Circuits
 
 These notebooks are the source files for the _Investigating Quantum Hardware
 using Quantum Circuits_ chapter of the Qiskit Textbook.

@@ -1,4 +1,4 @@
-# README
+# Quantum Protocols and Quantum Algorithms
 
 These notebooks are the source files for the _Quantum Protocols and Quantum
 Algorithms_ chapter of the Qiskit Textbook.

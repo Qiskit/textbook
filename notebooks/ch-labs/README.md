@@ -1,4 +1,4 @@
-# README
+# Quantum Computing Labs
 
 These notebooks are the source files for the _Quantum Computing Labs_ section
 of the Qiskit Textbook.

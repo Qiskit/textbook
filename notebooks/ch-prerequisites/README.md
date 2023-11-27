@@ -1,4 +1,4 @@
-# README
+# Prerequisites
 
 These notebooks are the source files for the _Prerequisites_ section of the
 Qiskit Textbook.

@@ -1,4 +1,4 @@
-# README
+# Introduction course
 
 These notebooks are the source files for the _Introduction_ course of the Qiskit Textbook.
 

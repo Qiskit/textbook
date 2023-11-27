@@ -1,4 +1,4 @@
-# README
+# Quantum States and Qubits
 
 These notebooks are the source files for the _Quantum States and Qubits_
 section of the Qiskit Textbook.

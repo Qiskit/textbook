@@ -1,4 +1,4 @@
-# README
+# Quantum Algorithms for Applications
 
 These notebooks are the source files for the _Quantum Algorithms for
 Applications_ chapter of the Qiskit Textbook.

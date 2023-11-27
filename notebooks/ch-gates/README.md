@@ -1,4 +1,4 @@
-# README
+# Multiple Qubits and Entanglement
 
 These notebooks are the source files for the _Multiple Qubits and Entanglement_
 chapter of the Qiskit Textbook.

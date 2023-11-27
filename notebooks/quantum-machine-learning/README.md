@@ -1,6 +1,6 @@
-# README
+# Quantum machine learning course
 
-These notebooks are the source files for the _Quantum Machine Learning_ course
+These notebooks are the source files for the _Quantum machine learning_ course
 of the Qiskit Textbook.
 
 > [!IMPORTANT]
