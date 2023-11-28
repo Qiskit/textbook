@@ -1,7 +1,0 @@
-extends: occurrence
-message: "Try not to have too many long sentences (< 35 words)."
-scope: sentence
-level: warning
-max: 35
-token: \b(\w+)\b
-

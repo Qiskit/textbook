@@ -1,7 +1,0 @@
-extends: readability
-message: "Grade level (%s) is high, consider wordsmithing."
-level: suggestion
-grade: 14
-metrics:
-  - Flesch-Kincaid
-  - Gunning Fog
