@@ -1,14 +1,13 @@
 # Qiskit Textbook content
 
-This repository contains the source files for the Qiskit Textbook.
+This repository contains the source files for the Qiskit Textbook. Each page in
+the textbook is a Jupyter notebook in the [`notebooks`](./notebooks) folder.
 
-> [!IMPORTANT]
-> The Qiskit Textbook has been superseded by [IBM Quantum
+> [!IMPORTANT] The Qiskit Textbook has been superseded by [IBM Quantum
 > Learning](https://learning.quantum-computing.ibm.com). These source files are
-> no longer maintained and may contain errors.
+> no longer maintained and may contain errors. We are not accepting any
+> contributions.
 
-Each page in the textbook is a Jupyter notebook in the
-[`notebooks`](./notebooks) folder.
 
 ## Bibtex citation
 
